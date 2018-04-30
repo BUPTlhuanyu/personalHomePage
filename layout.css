@@ -1,0 +1,54 @@
+.wrapper{
+    font-size:30px;
+    position:relative;
+    width:100%;
+    margin:0px auto;
+    height:auto;
+    min-height: 100%;
+}
+.content{
+    margin-top: 5rem;
+}
+.primary{
+    width:39.9%;
+    float:left;
+    display:inline;/*防止IE出现的双边距的BUG导致布局混乱*/
+}
+.secondary{
+    width:60%;
+    float:right;
+    display:inline;/*防止IE出现的双边距的BUG导致布局混乱*/
+}
+.bottom-box .primary{
+    width:65%;
+}
+.bottom-box .secondary{
+    width:34.9%;
+}
+.head{
+    position:fixed;
+    width:100%;
+    top:0rem;
+    left:0rem;
+    height:3.5rem;
+    margin-bottom:0.2rem;
+    z-index:900;
+    background: hsla(0,0%,100%,.8);
+}
+.foot-wrap{
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index:10;
+    width:100%;
+    background: hsla(0,0%,100%,.0);
+    height:3rem;
+    text-align: center;
+}
+.top-box{
+    width:100%;
+    padding:0.5rem 0rem;
+}
+.bottom-box{
+    width:100%;
+}

@@ -1,0 +1,25 @@
+/* slightly enhanced, universal clearfix hack */
+*{margin:0px;padding:0px;}
+html,body{
+    font-size: 16px;
+    height:100%;
+}
+body{
+    background:#000103 url(backgroundimage.jpg) no-repeat fixed;
+    background-size: cover;
+    min-width:400px;
+    max-width: 2000px;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    zoom: 1;
+    display: table;
+    width: 100%;
+}
