@@ -3,7 +3,7 @@
     margin-top:5rem;
 }
 #db-cont{
-    width:80%;
+    width:72%;
     height:650px;
     margin:0 auto;
     background-color:hsla(0,0%,100%,.5);
@@ -11,4 +11,8 @@
     border-radius: 5px;
     box-shadow: 0 2px 3px;
     overflow-y: scroll;
+}
+#db-cont img{
+    height: 377px;
+    width:25%;
 }
