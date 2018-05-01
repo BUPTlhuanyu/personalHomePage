@@ -4,6 +4,7 @@
     width:100%;
     margin:0px auto;
     height:auto;
+    /*通过设置min-height解决页脚问题*/
     min-height: 100%;
 }
 .content{
