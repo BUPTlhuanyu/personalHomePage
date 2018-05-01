@@ -18,6 +18,7 @@ function josnp(){
 // 回调执行函数,异步执行函数在全局作用域下调用所以定义在全局
 function onBack(res) {
     data=res;
+    alert(JSON.stringify(data));
     showImg(data);
 }
 
