@@ -54,25 +54,41 @@ aside{
 article{
     /*font-size:16px;*/
 }
+.abstract,.aside-bar,.cont{
+    height: 26rem;
+    margin-right:4rem;
+    padding:0.5rem;
+    background-color:hsla(0,0%,100%,.5);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px;
+}
 .top-box .abstract{
     height: 5rem;
     margin-right:4rem;
-    /*margin-top:4rem;*/
-    padding:0.5rem;
-    background-color:hsla(0,0%,100%,.5);
 }
 .cont{
     height: 26rem;
     margin-right:0.5rem;
-    padding:0.5rem;
-    background-color:hsla(0,0%,100%,.5);
 }
 .aside-bar{
     height: 26rem;
     margin-right:4rem;
-    padding:0.5rem;
-    background-color:hsla(0,0%,100%,.5);
 }
 .foot-wrap p{
     font-size: 1.3rem;
+}
+.head a{
+    text-decoration:none;
+}
+.head a:link{
+    color:black;
+}
+.head a:visited{
+    color:black;
+}
+#music li{
+    text-align: center;
+    display:inline;
+    padding:0 2rem;
 }

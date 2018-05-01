@@ -5,7 +5,7 @@ html,body{
     height:100%;
 }
 body{
-    background:#000103 url(backgroundimage.jpg) no-repeat fixed;
+    background:#000103 url(../img/backgroundimage.jpg) no-repeat fixed;
     background-size: cover;
     min-width:400px;
     max-width: 2000px;

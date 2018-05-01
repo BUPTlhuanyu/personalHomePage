@@ -1,0 +1,14 @@
+.content-test{
+    width:100%;
+    margin-top:5rem;
+}
+#db-cont{
+    width:80%;
+    height:650px;
+    margin:0 auto;
+    background-color:hsla(0,0%,100%,.5);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px;
+    overflow-y: scroll;
+}
