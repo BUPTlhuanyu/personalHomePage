@@ -56,14 +56,13 @@ article{
 }
 .abstract,.aside-bar,.cont{
     height: 26rem;
-    margin-right:4rem;
     padding:0.5rem;
     background-color:hsla(0,0%,100%,.5);
     border: 2px solid #fff;
     border-radius: 5px;
     box-shadow: 0 2px 3px;
 }
-.top-box .abstract{
+.abstract{
     height: 5rem;
     margin-right:4rem;
 }

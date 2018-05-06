@@ -3,12 +3,11 @@
 html,body{
     font-size: 16px;
     height:100%;
+    margin:0 auto;
 }
 body{
     background:#000103 url(../img/backgroundimage.jpg) no-repeat fixed;
     background-size: cover;
-    min-width:400px;
-    max-width: 2000px;
 }
 .clearfix:after {
     visibility: hidden;

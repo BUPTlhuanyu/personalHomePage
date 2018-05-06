@@ -2,10 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
     <title>lhuanyu</title>
     <link type="text/css" href="css/common.css" rel="stylesheet">
     <link type="text/css" href="css/layout.css" rel="stylesheet">
     <link type="text/css" href="css/content.css" rel="stylesheet">
+    <style>
+        @media screen and (max-width: 480px){
+            .primary,.secondary,.bottom-box .primary,.bottom-box .secondary,.foot-wrap{
+                width:100%;
+            }
+            .abstract,.aside-bar,.cont{
+                margin:0;
+                padding:0;
+            }
+            .top-box,.bottom-box .primary,.bottom-box .secondary{
+                margin-top:16px;
+            }
+            .content{
+                padding:0 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
 <div class="wrapper">
@@ -16,7 +34,7 @@
             <li><a href="javascript:">科研的世界</a></li>
             <li><a href="pages/life.html">爱与生活</a></li>
             <li><a href="javascript:">留言</a></li>
-            <li><input class="search-box" type="text" /></li>
+            <li><form><input class="search-box" type="text" /></form></li>
         </ul>
     </header>
     <section class="content clearfix col-same">

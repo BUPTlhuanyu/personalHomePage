@@ -2,8 +2,12 @@
  * Created by lhy on 2018/5/1.
  */
 
-
 var data=null,db=null;
+
+
+/*
+跨域:Jsonp （豆瓣的这个api不支持websocket，服务器有拦截）
+*/
 function josnp(){
     //josnp获取豆瓣电影正在热映的json数据
     var script = document.createElement('script');
@@ -21,18 +25,6 @@ function onBack(res) {
     showImg(data);
 }
 
-//一开始试图将每个img的src变为https，由于通过https获取的src自动变为https，所以这里不再需要手动添加s了
-// function trim(str){ //删除左边的空格
-//     return str.replace(/(^\s*)|(\s*$)/g, "");
-// }
-//
-// //给字符串str指定位置position添加字符串str2
-// function addHttps(str1,position,str2){
-//     trim(str1);
-//     var reg=new RegExp("\(\.\{"+position+"\}\)");
-//     str2='$1'+str2;
-//     return str1.replace(reg, str2);
-// }
 
 //逐个appendchild
 // var imageArr=[];
@@ -59,7 +51,6 @@ function showImg(data){
     var fragment=document.createDocumentFragment(),
         movLens=data.subjects.length,
         images=null;
-    var date=new Date();
     for(var i=0;i<movLens;i++){
         images = document.createElement('img');
         //一开始为了解决chrome和firefox浏览器加载http资源受限的情况，由于通过https获取的src自动变为https，所以这里不再需要手动添加s了
@@ -75,7 +66,6 @@ function showImg(data){
         fragment.appendChild(images);
     }
     db.appendChild(fragment);
-    console.log(new Date() - date);
 }
 
 window.onload=function(){

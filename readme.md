@@ -27,7 +27,9 @@
 
 #####   CSS
 +   两列流式布局，三列流式布局，混合流式布局。未使用flex
-+   清除浮动方法的比较，主要用了常用的clearfix的布局
++   利用max-width与min-width避免缩放对布局的影响。
++   清除浮动方法的比较，主要用了常用的clearfix清除浮动形成BFC块级上下文，隔离浮动的子元素。
++   清除浮动之后，利用footer的负外边距与兄弟元素的min-height:100%以及兄弟元素最后一个子元素的padding-bottom实现stickyfooter，footer始终保持在html底部。
 +   浮动定位
 +   页脚始终保持在html底部，min-height
 +   水平垂直居中
