@@ -22,3 +22,60 @@ body{
     display: table;
     width: 100%;
 }
+/*公共容器*/
+.wrapper{
+    font-size:30px;
+    position:relative;
+    width:100%;
+    margin:0px auto;
+    height: 100%;
+    max-width: 1800px;
+}
+/*公共导航栏*/
+.head{
+    position:fixed;
+    width:100%;
+    top:0rem;
+    left:0rem;
+    height:3.5rem;
+    margin-bottom:0.2rem;
+    z-index:900;
+    background: hsla(0,0%,100%,.8);
+}
+.nav{
+    padding: 1rem 0;
+    font-size:16px;
+    min-width: 920px;
+}
+.nav li{
+    text-align: center;
+    display:inline;
+    padding:0 2rem;
+}
+.nav li:last-child{
+    float:right;
+}
+.search-box{
+    line-height: 1.5rem;
+    border:0px;
+    border-radius: 1rem;
+    outline:none;
+    padding-left:1rem;
+}
+.head a{
+    text-decoration:none;
+}
+.head a:link{
+    color:black;
+}
+.head a:visited{
+    color:black;
+}
+/*公共footer*/
+.foot-wrap{
+    margin:-5rem auto 0 auto;
+    text-align: center;
+}
+.foot-wrap p{
+    font-size: 1.3rem;
+}

@@ -1,55 +1,6 @@
-.wrapper{
-    font-size:30px;
-    position:relative;
-    width:100%;
-    margin:0px auto;
-    height: 100%;
-    /*min-width:940px;*/
-    max-width: 1800px;
-}
-.content{
-    margin-top: 5rem;
-    min-height: 100%;
-}
-.primary{
-    width:39.9%;
-    float:left;
-    display:inline;/*防止IE出现的双边距的BUG导致布局混乱*/
-}
-.secondary{
-    width:60%;
-    float:right;
-    display:inline;/*防止IE出现的双边距的BUG导致布局混乱*/
-}
-.bottom-box .primary{
-    width:65%;
-}
-.bottom-box .secondary{
-    width:34.9%;
-}
-.head{
-    position:fixed;
-    width:100%;
-    top:0rem;
-    left:0rem;
-    height:3.5rem;
-    margin-bottom:0.2rem;
-    z-index:900;
-    background: hsla(0,0%,100%,.8);
-}
 
-.content article{
-    padding-bottom: 7rem;
-}
 
-.foot-wrap{
-    margin:-5rem auto 0 auto;
-    text-align: center;
-}
-.top-box{
-    width:100%;
-    padding:0.5rem 0rem;
-}
-.bottom-box{
-    width:100%;
-}
+
+
+
+

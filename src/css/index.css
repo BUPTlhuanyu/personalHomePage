@@ -1,0 +1,105 @@
+/*整体布局*/
+.content{
+    margin-top: 5rem;
+    min-height: 100%;
+}
+.primary{
+    width:39.9%;
+    float:left;
+    display:inline;/*防止IE出现的双边距的BUG导致布局混乱*/
+}
+.secondary{
+    width:60%;
+    float:right;
+    display:inline;/*防止IE出现的双边距的BUG导致布局混乱*/
+}
+.bottom-box .primary{
+    width:65%;
+}
+.bottom-box .secondary{
+    width:34.9%;
+}
+/*左边栏布局*/
+.content-title{
+    font: 4rem Verdana;
+    text-align:center;
+    padding:3rem 3rem 0.4rem;
+}
+.content-skill{
+    font: 1.2rem Droid Sans;
+    padding:1rem 1rem;
+}
+.content-skill li{
+    display:inline-block;
+}
+.content-skill ul{
+    text-align: center;
+}
+.skill-one li,.skill-two li{
+    background-color:hsla(0,0%,100%,.4);
+    border:1px solid;
+    border-radius:0.2rem;
+    outline:none;
+    margin:1rem 1rem;
+    padding:0 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem #888888;
+}
+.content-icon{
+    text-align: center;
+}
+.content-icon img{
+    width:3rem;
+    height:3rem;
+}
+/*右边栏布局*/
+.top-box{
+    width:100%;
+    padding:0.5rem 0rem;
+}
+.bottom-box{
+    width:100%;
+}
+.content article{
+    padding-bottom: 7rem;
+}
+.abstract,.aside-bar,.cont{
+    height: 26rem;
+    padding:0.5rem;
+    background-color:hsla(0,0%,100%,.5);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px;
+}
+.abstract{
+    height: 5rem;
+    margin-right:4rem;
+}
+.cont{
+    height: 26rem;
+    margin-right:0.5rem;
+}
+.aside-bar{
+    height: 26rem;
+    margin-right:4rem;
+}
+#music li{
+    text-align: center;
+    display:inline;
+    padding:0 2rem;
+}
+@media screen and (max-width: 940px){
+    .primary,.secondary,.bottom-box .primary,.bottom-box .secondary,.foot-wrap{
+        width:100%;
+    }
+    .content-title,.abstract,.aside-bar,.cont{
+        margin:0;
+        padding:0;
+    }
+    .top-box,.bottom-box .primary,.bottom-box .secondary{
+        margin-top:16px;
+    }
+    header{
+        display:none;
+    }
+}
+
