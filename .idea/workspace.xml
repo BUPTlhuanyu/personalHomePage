@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a47252b9-49d9-4c49-ac66-ad4dba6fc46c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/content.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/layout.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/life.html" afterPath="$PROJECT_DIR$/src/pages/life.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -89,8 +86,8 @@
       <file leaf-file-name="life.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/life.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="68" lean-forward="false" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+            <state relative-caret-position="51">
+              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -402,12 +399,12 @@
       <workItem from="1525569415900" duration="3095000" />
       <workItem from="1525575108467" duration="906000" />
       <workItem from="1525589691622" duration="22589000" />
-      <workItem from="1525654465246" duration="2203000" />
+      <workItem from="1525654465246" duration="2291000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83226000" />
+    <option name="totallyTimeSpent" value="83314000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-21" y="0" width="1456" height="862" extended-state="0" />
@@ -774,8 +771,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/life.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="68" lean-forward="false" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+        <state relative-caret-position="51">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
           <folding />
         </state>
       </provider>
