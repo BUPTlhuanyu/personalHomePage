@@ -8,7 +8,7 @@
 #db-cont{
     width:72%;
     height:650px;
-    padding-bottom: 7rem;
+    /*padding-bottom: 7rem;*/
     margin:0 auto;
     background-color:hsla(0,0%,100%,.5);
     border: 2px solid #fff;

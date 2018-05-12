@@ -17,7 +17,6 @@ function josnp(){
     script.src = 'https://api.douban.com/v2/movie/in_theaters?callback=onBack';
     document.head.appendChild(script);
 }
-
 // 回调执行函数,异步执行函数在全局作用域下调用所以定义在全局
 function onBack(res) {
     data=res;

@@ -41,12 +41,30 @@
 	    </aside>
         <article class="secondary">
             <div class="top-box">
-                <div class="abstract" title="not complete"  id="music">
-                    <ul>
-                        <li title="歌手头像"><img /></li>
-                        <li title="音乐播放器"><span id="lrc"></span></li>
-                        <li title="声音调节"><img/></li>
-                    </ul>
+                <div class="music" title="not complete">
+                    <audio>
+                        <source src="" >
+                    </audio>
+                    <div id="music-img">
+                        <a href="javascript:" class="stop-control"></a>
+                    </div>
+                    <div id="music-control">
+                        <div class="audio-left">
+                        </div>
+                        <div class="audio-right">
+                            <div class="audio-title">
+                                <p id="songName"></p>
+                                <a id="volume" class="volumeMore"></a>
+                            </div>
+                            <div class="progress-bar-bg" id="progressBarBg"><span id="progressDot"></span>
+                                <div class="progress-bar" id="progressBar"></div>
+                            </div>
+                            <div class="audio-time">
+                                <span class="audio-length-current" id="audioCurTime">00:00</span>
+                                <span class="audio-length-total">01:06</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="bottom-box clearfix">
@@ -69,5 +87,6 @@
     </section>
     <footer class="foot-wrap"><p>Copyright © 2018 by lhuanyu</p></footer>
 </div>
+<script type="text/javascript" src="./js/cloudmusic.js"></script>
 </body>
 </html>

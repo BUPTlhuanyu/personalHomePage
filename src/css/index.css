@@ -62,7 +62,7 @@
 .content article{
     padding-bottom: 7rem;
 }
-.abstract,.aside-bar,.cont{
+.music,.aside-bar,.cont{
     height: 26rem;
     padding:0.5rem;
     background-color:hsla(0,0%,100%,.5);
@@ -70,7 +70,7 @@
     border-radius: 5px;
     box-shadow: 0 2px 3px;
 }
-.abstract{
+.music{
     height: 5rem;
     margin-right:4rem;
 }
@@ -82,16 +82,11 @@
     height: 26rem;
     margin-right:4rem;
 }
-#music li{
-    text-align: center;
-    display:inline;
-    padding:0 2rem;
-}
 @media screen and (max-width: 940px){
     .primary,.secondary,.bottom-box .primary,.bottom-box .secondary,.foot-wrap{
         width:100%;
     }
-    .content-title,.abstract,.aside-bar,.cont{
+    .content-title,.music,.aside-bar,.cont{
         margin:0;
         padding:0;
     }
@@ -102,4 +97,124 @@
         display:none;
     }
 }
+audio{
+    width:0;
+}
+#music-img{
+    background: url(http://p1.music.126.net/AmUoDfx17bcXoZF0uxU0-A==/109951163188724394.jpg) no-repeat center;
+    background-size: cover;
+    float:left;
+    width:6rem;
+    height: 100%;
+}
+#music-img a{
+    width:100%;
+    height: 100%;
+    display:block;
+}
+.stop-control:hover{
+    background:hsla(0,0%,100%,.5) url(../img/stop.png) no-repeat center;
+}
+.play-control:hover{
+    background:hsla(0,0%,100%,.5) url(../img/play.png) no-repeat center;
+}
 
+#music-control{
+    background:#ffffff;
+    margin-left:6.1rem;
+    height: 100%;
+}
+
+
+/*audio*/
+.audio-left {
+    float: left;
+    text-align: center;
+    width: 13%;
+    height: 100%;
+    background: url(../img/next.png) no-repeat center;
+    background-size: 40%;
+}
+
+
+.audio-right {
+    margin-right: 2%;
+    float: right;
+    width: 83%;
+    height: 100%;
+}
+
+.audio-title {
+    font-size: 15px;
+    height: 35%;
+    margin: 8px 0;
+    width: 100%;
+
+    /* 歌曲名称只显示在一行，超出部分显示为省略号 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#songName{
+    float:left;
+    width:89%;
+}
+
+#volume{
+    float:right;
+    width:9.9%;
+    height:100%;
+}
+.volumeMore{
+    background: url(../img/voice.png) no-repeat center;
+    background-size: 45%;
+}
+.volumeLess{
+    background: url(../img/voiceless.png) no-repeat center;
+    background-size: 28%;
+}
+
+.progress-bar-bg {
+    background-color: #d9d9d9;
+    position: relative;
+    height: 2px;
+    cursor: pointer;
+}
+
+.progress-bar {
+    background-color: #649fec;
+    width: 0;
+    height: 2px;
+}
+
+.progress-bar-bg span {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #3e87e8;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -5px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+.audio-time {
+    overflow: hidden;
+    margin-top: -1px;
+}
+
+.audio-length-total {
+    float: right;
+    font-size: 12px;
+}
+
+.audio-length-current {
+    float: left;
+    font-size: 12px;
+}

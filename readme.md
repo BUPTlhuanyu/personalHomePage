@@ -37,7 +37,10 @@
 
 #####   js
 +   利用豆瓣API，生成电影榜单:利用jsonp跨域，解决chrome等浏览器的阻止混合内容，取消逐个添加DOM，解决响应完成的一些异步问题。
-+   利用qq音乐API，为音乐播放器提供资源
++   网易云音乐歌曲获取，还没有实现跨站请求伪造(CSRF),伪造请求头,调用官方API，这里只是简单的获取歌单的API，然后获取页面的JSON数据存为
+    本地的JSON数据，跳过了跨域这样的一个问题。
++   audio音频对象的使用
++   通过js改变伪类hover的样式:通过在css中写两个class然后，通过DOM的className或者classList选用哪一个class
 
 ![图片](main.png)
 ![图片](life.png)

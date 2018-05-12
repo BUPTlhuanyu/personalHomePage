@@ -6,7 +6,7 @@ html,body{
     margin:0 auto;
 }
 body{
-    background:#000103 url(../img/backgroundimage.jpg) no-repeat fixed;
+    background:#000103 url(../img/backgroundimage1.jpg) no-repeat fixed;
     background-size: cover;
 }
 .clearfix:after {
