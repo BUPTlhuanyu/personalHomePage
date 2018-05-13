@@ -40,7 +40,7 @@
 +   网易云音乐歌曲获取，还没有实现跨站请求伪造(CSRF),伪造请求头,调用官方API，这里只是简单的获取歌单的API，然后获取页面的JSON数据存为
     本地的JSON数据，跳过了跨域这样的一个问题。
 +   audio音频对象的使用
-+   通过js改变伪类hover的样式:通过在css中写两个class然后，通过DOM的className或者classList选用哪一个class
++   通过js改变伪类hover的样式:通过在css中写两个class然后，通过DOM的className或者classList选用class
 
 ![图片](main.png)
 ![图片](life.png)

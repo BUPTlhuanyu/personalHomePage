@@ -66,8 +66,8 @@
     height: 26rem;
     padding:0.5rem;
     background-color:hsla(0,0%,100%,.5);
-    border: 2px solid #fff;
-    border-radius: 5px;
+    /*border: 2px solid #2c424a;*/
+    /*border-radius: 5px;*/
     box-shadow: 0 2px 3px;
 }
 .music{
@@ -216,4 +216,29 @@ audio{
 .audio-length-current {
     float: left;
     font-size: 0.75rem;
+}
+.aside-bar{
+    overflow: hidden;
+    text-align:center;
+}
+.aside-bar a{
+    font-size:0.8rem;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap:break-word;
+    text-overflow: ellipsis;
+    width:100%;
+    text-align:center;
+    margin:0.5rem 0;
+    text-decoration: none;
+    color:#000103;
+}
+.aside-bar span{
+    color:#333333;
+    font-size:1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background:url(../img/get.png) no-repeat center;
+    background-size: 120% 100%;
 }

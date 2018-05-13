@@ -130,4 +130,46 @@ window.onload=function(){
         volume.addEventListener("click",volumeChange);
         progressBarBg.addEventListener("click",timeSelect);
     }
+    /*获取资源*/
+    function createXHR(){
+        try{
+            return new XMLHttpRequest();
+        }catch (e){
+
+        }
+    }
+    var sourceXHR=createXHR(),sourceData=null;
+    var asideBar=document.getElementsByClassName("aside-bar")[0];
+    sourceXHR.open("get","../source/JSON/myBooks.json",true);
+    sourceXHR.send(null);
+    sourceXHR.onreadystatechange=function(){
+        if(sourceXHR.readyState==4){
+            if((sourceXHR.status>=200 && sourceXHR.status<300)|| sourceXHR.status==304){
+                sourceData=JSON.parse(sourceXHR.responseText).books;
+                book(sourceData);
+            }else{
+                alert('unsuccessful'+sourceXHR.status);
+            }
+        }
+    };
+    function book(data){
+        var fragment=document.createDocumentFragment(),
+            bookLens=data.length,
+            items=null;
+        for(var i=0;i<bookLens;i++){
+            items = document.createElement('a');
+            items.href=data[i].bookUrl;
+            items.target="blank";
+            items.textContent=data[i].name;
+            items.onerror=function(event){
+                //由于get不到图片，所以需要给用户提醒一下，哪些失败了
+                event.target.style.display="none";
+            };
+            fragment.appendChild(items);
+        }
+        items = document.createElement('span');
+        items.textContent="get keys";
+        fragment.appendChild(items);
+        asideBar.appendChild(fragment);
+    }
 };
