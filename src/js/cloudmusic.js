@@ -5,6 +5,12 @@ window.onload=function(){
     var nextSongControl=document.getElementsByClassName("audio-left")[0];
     var volume=document.getElementById('volume');
     var songDetail=document.getElementById('songName');
+    var audioCurTime=document.getElementById('audioCurTime');
+    var audioTotalTime=document.getElementById('audioTotalTime');
+    var musicImg=document.getElementById('music-img');
+    var progressBarBg=document.getElementById('progressBarBg');
+    var progressDot=document.getElementById('progressDot');
+    var progressBar=document.getElementById('progressBar');
     function createXHR(){
         try{
             return new XMLHttpRequest();
@@ -28,14 +34,43 @@ window.onload=function(){
     function music(){
         var len=data.length,stopState=1,
             originUrl="http://music.163.com/song/media/outer/url",
-            currentData=data[parseInt(Math.random()*129)],
-            currentSongId=currentData.id,
-            songName=currentData.name,
-            singerName=currentData.artists[0].name,
             volumeValue=1;
-        //获取歌曲的ID
-        function getSongId(data){
-            return data[parseInt(Math.random()*129)].id;
+        function init(){
+            //getCurrentData
+            var currentData=data[parseInt(Math.random()*(len-1))],
+                currentSongId=currentData.id,
+                songName=currentData.name,
+                singerName=currentData.artists[0].name,
+                songPic=currentData.album.picUrl;
+            //loadMusic
+            audio.src=getSongUrl(originUrl,'id',currentSongId);
+            //loadPic
+            musicImg.style.cssText=";background:url("+songPic+")no-repeat center;";
+            //showDetail
+            songDetail.textContent=singerName+":"+songName;
+
+
+        }
+        function formatTime(minutes,seconds){
+            minutes=minutes<10?('0'+minutes):(minutes);
+            seconds=seconds<10?('0'+seconds):(seconds);
+            return minutes+":"+seconds;
+        }
+        function showTotalTime(){
+            //showTotalTime
+            var totalMinutes=parseInt(audio.duration/60);
+            var totalSeconds=Math.round(audio.duration-60*totalMinutes);
+            audioTotalTime.textContent=formatTime(totalMinutes,totalSeconds);
+        }
+        function showCurrentTime(){
+            //showCurrentTime
+            var currentMinutes=parseInt(audio.currentTime/60);
+            var currentSeconds=Math.round(audio.currentTime-60*currentMinutes);
+            audioCurTime.textContent=formatTime(currentMinutes,currentSeconds);
+            //progress
+            var pos=progressBarBg.clientWidth*audio.currentTime/audio.duration;
+            progressBar.style.cssText="width:"+pos+"px";
+            progressDot.style.cssText="left:"+pos+"px";
         }
         //获取歌曲的URL
         function getSongUrl(originUrl,name,value){
@@ -50,8 +85,6 @@ window.onload=function(){
         }
         //开始播放，并且更换开始播放按钮的背景图片
         function Change(){
-            songDetail.textContent=singerName+":"+songName;
-            audio.src=getSongUrl(originUrl,'id',currentSongId);
             if(stopState){
                 audio.play();
                 playControl.className="play-control";
@@ -63,12 +96,7 @@ window.onload=function(){
             }
         }
         function nextSong(){
-            currentData=data[parseInt(Math.random()*129)];
-            currentSongId=currentData.id;
-            songName=currentData.name;
-            singerName=currentData.artists[0].name;
-            audio.src=getSongUrl(originUrl,'id',currentSongId);
-            songDetail.textContent=singerName+":"+songName;
+            init();
             audio.play();
             playControl.className="play-control";
             stopState=!stopState;
@@ -82,8 +110,24 @@ window.onload=function(){
                 volume.className="volumeLess";
             }
         }
+        function autoNext(){
+            nextSong();
+        }
+        function timeSelect(event){
+            var eventPos=event.offsetX,
+                totalWidth=progressBarBg.clientWidth;
+                //offsetX得到的鼠标位置会出现为-1的情况
+                eventPos=eventPos<0?0:eventPos;
+            audio.currentTime=audio.duration*eventPos/totalWidth;
+
+        }
+        init();
+        audio.addEventListener("timeupdate",showCurrentTime);
+        audio.addEventListener("canplay",showTotalTime);
+        audio.addEventListener("ended",autoNext);
         playControl.addEventListener("click",Change);
         nextSongControl.addEventListener("click",nextSong);
         volume.addEventListener("click",volumeChange);
+        progressBarBg.addEventListener("click",timeSelect);
     }
 };

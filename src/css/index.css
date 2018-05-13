@@ -101,7 +101,6 @@ audio{
     width:0;
 }
 #music-img{
-    background: url(http://p1.music.126.net/AmUoDfx17bcXoZF0uxU0-A==/109951163188724394.jpg) no-repeat center;
     background-size: cover;
     float:left;
     width:6rem;
@@ -114,9 +113,11 @@ audio{
 }
 .stop-control:hover{
     background:hsla(0,0%,100%,.5) url(../img/stop.png) no-repeat center;
+    background-size: 32%;
 }
 .play-control:hover{
     background:hsla(0,0%,100%,.5) url(../img/play.png) no-repeat center;
+    background-size: 32%;
 }
 
 #music-control{
@@ -147,18 +148,16 @@ audio{
 .audio-title {
     font-size: 15px;
     height: 35%;
-    margin: 8px 0;
+    margin: 0.5rem 0;
     width: 100%;
-
-    /* 歌曲名称只显示在一行，超出部分显示为省略号 */
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 #songName{
     float:left;
     width:89%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 #volume{
@@ -178,20 +177,20 @@ audio{
 .progress-bar-bg {
     background-color: #d9d9d9;
     position: relative;
-    height: 2px;
+    height: 0.2rem;
     cursor: pointer;
 }
 
 .progress-bar {
     background-color: #649fec;
     width: 0;
-    height: 2px;
+    height: 0.2rem;
 }
 
 .progress-bar-bg span {
     content: " ";
-    width: 10px;
-    height: 10px;
+    width: 0.625rem;
+    height: 0.625rem;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -199,22 +198,22 @@ audio{
     position: absolute;
     left: 0;
     top: 50%;
-    margin-top: -5px;
-    margin-left: -5px;
+    margin-top: -0.312rem;
+    margin-left: 0;
     cursor: pointer;
 }
 
 .audio-time {
     overflow: hidden;
-    margin-top: -1px;
+    margin-top: 0.189rem;
 }
 
 .audio-length-total {
     float: right;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .audio-length-current {
     float: left;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
