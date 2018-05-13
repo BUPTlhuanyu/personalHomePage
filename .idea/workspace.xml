@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a47252b9-49d9-4c49-ac66-ad4dba6fc46c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/backgroundimage.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/backgroundimage1.jpg" afterPath="$PROJECT_DIR$/src/img/backgroundimage1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/backgroundimage2.jpg" afterPath="$PROJECT_DIR$/src/img/backgroundimage2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/download.png" afterPath="$PROJECT_DIR$/src/img/download.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/next.png" afterPath="$PROJECT_DIR$/src/img/next.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/play.png" afterPath="$PROJECT_DIR$/src/img/play.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/prev.png" afterPath="$PROJECT_DIR$/src/img/prev.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/stop.png" afterPath="$PROJECT_DIR$/src/img/stop.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/voice.png" afterPath="$PROJECT_DIR$/src/img/voice.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/voiceless.png" afterPath="$PROJECT_DIR$/src/img/voiceless.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/common.css" afterPath="$PROJECT_DIR$/src/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/index.css" afterPath="$PROJECT_DIR$/src/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/cloudmusic.js" afterPath="$PROJECT_DIR$/src/js/cloudmusic.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -81,10 +67,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
+            <state relative-caret-position="854">
               <caret line="242" column="30" lean-forward="false" selection-start-line="242" selection-start-column="30" selection-end-line="242" selection-end-column="30" />
               <folding />
             </state>
@@ -108,10 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="136">
               <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
               <folding />
             </state>
@@ -175,8 +161,8 @@
         <option value="$PROJECT_DIR$/source/JSON/myBooks.json" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/js/cloudmusic.js" />
-        <option value="$PROJECT_DIR$/src/css/common.css" />
         <option value="$PROJECT_DIR$/src/css/index.css" />
+        <option value="$PROJECT_DIR$/src/css/common.css" />
       </list>
     </option>
   </component>
@@ -457,12 +443,12 @@
       <workItem from="1526045135991" duration="2236000" />
       <workItem from="1526087374562" duration="34067000" />
       <workItem from="1526132568388" duration="4537000" />
-      <workItem from="1526171842624" duration="24261000" />
+      <workItem from="1526171842624" duration="24531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155552000" />
+    <option name="totallyTimeSpent" value="155822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -762,18 +748,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/common.css">
+    <entry file="file://$PROJECT_DIR$/src/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        <state relative-caret-position="854">
+          <caret line="242" column="30" lean-forward="false" selection-start-line="242" selection-start-column="30" selection-end-line="242" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/index.css">
+    <entry file="file://$PROJECT_DIR$/src/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="242" column="30" lean-forward="false" selection-start-line="242" selection-start-column="30" selection-end-line="242" selection-end-column="30" />
+        <state relative-caret-position="136">
+          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
           <folding />
         </state>
       </provider>
