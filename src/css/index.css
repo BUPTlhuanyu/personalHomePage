@@ -218,7 +218,7 @@ audio{
     font-size: 0.75rem;
 }
 .aside-bar{
-    overflow: hidden;
+    overflow-y: auto;
     text-align:center;
 }
 .aside-bar a{
