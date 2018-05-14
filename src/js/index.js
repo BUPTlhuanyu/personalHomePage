@@ -1,5 +1,6 @@
 window.onload=function(){
     (function(){
+        /*获取音乐资源*/
         var audio=document.getElementsByTagName('audio')[0];
         var playControl=document.getElementsByClassName('stop-control')[0];
         var nextSongControl=document.getElementsByClassName("audio-left")[0];
@@ -134,30 +135,59 @@ window.onload=function(){
             volume.addEventListener("click",volumeChange);
             progressBarBg.addEventListener("click",timeSelect);
         }
-        /*获取资源*/
+        /*获取图书资源*/
         var bookUrl="../source/JSON/myBooks.json";
         var asideBar=document.getElementsByClassName("aside-bar")[0];
+        var bookKeys=document.getElementById('keys');
+        var maskStated=false,getStated=false;
         getAjax(bookUrl,book);
         function book(bookData){
             var data=bookData.books,fragment=document.createDocumentFragment(),
                 bookLens=data.length,
                 items=null;
+            function showKeys(){
+                maskStated=true;
+                mdOverlay.style.cssText="display: block;";
+                mask.style.cssText="display: block;";
+                if(!getStated){
+                    var items=null,keyFragment=document.createDocumentFragment();
+                    for(var i=0;i<bookLens;i++){
+                        items = document.createElement('li');
+                        items.textContent=data[i].name+':'+data[i].key;
+                        items.onerror=function(event){
+                            event.target.style.display="none";
+                        };
+                        keyFragment.appendChild(items);
+                    }
+                    bookKeys.appendChild(keyFragment);
+                    getStated=!getStated;
+                }
+            }
             for(var i=0;i<bookLens;i++){
                 items = document.createElement('a');
                 items.href=data[i].bookUrl;
                 items.target="blank";
                 items.textContent=data[i].name;
                 items.onerror=function(event){
-                    //由于get不到图片，所以需要给用户提醒一下，哪些失败了
                     event.target.style.display="none";
                 };
                 fragment.appendChild(items);
             }
             items = document.createElement('span');
+            items.addEventListener("click",showKeys);
             items.textContent="get keys";
             fragment.appendChild(items);
             asideBar.appendChild(fragment);
         }
+        function closeMask(){
+            if(maskStated){
+                mdOverlay.style.cssText="display: none;";
+                mask.style.cssText="display: none;";
+            }
+        }
+        var maskClose=document.getElementById('mask-close');
+        var mdOverlay=document.getElementsByClassName('md-overlay')[0];
+        var mask=document.getElementById('mask');
+        maskClose.addEventListener("click",closeMask);
     })();
-
 };
