@@ -45,6 +45,7 @@
 
 ![图片](https://github.com/BUPTlhuanyu/personalHomePage/blob/master/mainForPC-1.png)
 ![图片](https://github.com/BUPTlhuanyu/personalHomePage/blob/master/mainForPC-2.png)
+![图片](https://github.com/BUPTlhuanyu/personalHomePage/blob/master/liveForPC-1.png)
 ![图片](https://github.com/BUPTlhuanyu/personalHomePage/blob/master/mainForMobile-1.png)
 ![图片](https://github.com/BUPTlhuanyu/personalHomePage/blob/master/mainForMobile-2.png)
 ![图片](https://github.com/BUPTlhuanyu/personalHomePage/blob/master/mainForMobile-3.png)
