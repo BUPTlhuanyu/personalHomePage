@@ -43,5 +43,9 @@
 +   audio音频对象的使用
 +   通过js改变伪类hover的样式:通过在css中写两个class然后，通过DOM的className或者classList选用class
 
-![图片](main.png)
-![图片](life.png)
+![图片](https://github.com/BUPTlhuanyu/personalHomePage/blob/master/mainForPC-1.png)
+![图片](https://github.com/BUPTlhuanyu/personalHomePage/blob/master/mainForPC-2.png)
+![图片](https://github.com/BUPTlhuanyu/personalHomePage/blob/master/mainForMobile-1.png)
+![图片](https://github.com/BUPTlhuanyu/personalHomePage/blob/master/mainForMobile-2.png)
+![图片](https://github.com/BUPTlhuanyu/personalHomePage/blob/master/mainForMobile-3.png)
+![图片](https://github.com/BUPTlhuanyu/personalHomePage/blob/master/mainForMobile-4.png)
