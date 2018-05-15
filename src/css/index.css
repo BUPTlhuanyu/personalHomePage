@@ -1,6 +1,6 @@
 /*整体布局*/
 .content{
-    margin-top: 5rem;
+    margin-top: 8rem;
     min-height: 100%;
 }
 .primary{
@@ -60,7 +60,7 @@
     width:100%;
 }
 .content article{
-    padding-bottom: 7rem;
+    padding-bottom: 6rem;
 }
 .music,.aside-bar,.cont{
     height: 26rem;
