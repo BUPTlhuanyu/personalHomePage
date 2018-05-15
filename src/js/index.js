@@ -1,5 +1,13 @@
 window.onload=function(){
     (function(){
+        /*弹框*/
+        var navBarActive=document.getElementsByClassName('nav-bar-active')[0];
+        var navActive=document.getElementsByClassName('nav-active')[0];
+        navBarActive.onclick = function ()
+        {
+            var style = navActive.style;
+            style.display = style.display == "block" ? "none" : "block";
+        };
         /*获取音乐资源*/
         var audio=document.getElementsByTagName('audio')[0];
         var playControl=document.getElementsByClassName('stop-control')[0];
