@@ -238,7 +238,7 @@ window.onload=function(){
                 //对文字抽取的像素点的信息存储在getImageData返回的imageData对象的data属性中
                 data = this.ctx.getImageData(xStart, yStart, this.size * this.length, this.size).data;
             //即对文字抽取的像素点进行抽样的间隔，也就是每gap个像素取一个像素
-            var gap = 4;
+            var gap = 1;
             var positions = [], x = xStart, y = yStart;
             for(var i = 0;i < data.length; i += 4 * gap){
                 //判断这个像素是否可见，如果可见存入文字微粒化后的数组中，否则丢弃
@@ -259,7 +259,6 @@ window.onload=function(){
     };
 
     function Particle(x, y, size, color, xEnd, yEnd, e){
-        size=size||2;
         e=e||60;
         this.x = x;
         this.y = y;
@@ -323,7 +322,7 @@ window.onload=function(){
                 var color=~~(Math.random()*100);
                 this.particles.push(
                     new Particle(Math.random() * this.width, Math.random() * this.height,
-                        2,'rgba('+color+','+color+','+color+',1)',
+                        1,'rgba('+color+','+color+','+color+',1)',
                         dots[i].x,dots[i].y ,30)
                 );
             }
@@ -342,8 +341,7 @@ window.onload=function(){
     //给预设的画布初始化，创建渲染上下文,给渲染上下文设置高宽
     ShapeBuilder.init(cache.width,cache.height);
     //给粒子添加文字内容,文字所在的位置坐标
-    // ShapeBuilder.write(words,cache.width/4,cache.height/4,60);
-    ShapeBuilder.write(words,cache.width/2,cache.height/2,60);
+    ShapeBuilder.write(words,cache.width/2,cache.height/2,40);
     //获取文字内容的坐标
     var dots=ShapeBuilder.getPositions();
     canvas.init();
