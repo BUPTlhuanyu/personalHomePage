@@ -322,7 +322,7 @@ window.onload=function(){
                 var color=~~(Math.random()*100);
                 this.particles.push(
                     new Particle(Math.random() * this.width, Math.random() * this.height,
-                        1,'rgba('+color+','+color+','+color+',1)',
+                        1,'rgba(255,255,255,1)',
                         dots[i].x,dots[i].y ,30)
                 );
             }
