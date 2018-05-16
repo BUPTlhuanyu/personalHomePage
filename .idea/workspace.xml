@@ -51,7 +51,7 @@
             <entry file="file://$PROJECT_DIR$/src/js/index.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="259">
-                  <caret line="341" column="0" lean-forward="false" selection-start-line="341" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
+                  <caret line="341" column="46" lean-forward="true" selection-start-line="341" selection-start-column="46" selection-end-line="341" selection-end-column="46" />
                   <folding>
                     <element signature="e#1107#1699#0" expanded="false" />
                     <element signature="e#1758#5489#0" expanded="false" />
@@ -518,12 +518,12 @@
       <workItem from="1526366476690" duration="26000" />
       <workItem from="1526380476981" duration="699000" />
       <workItem from="1526392476325" duration="3613000" />
-      <workItem from="1526431632903" duration="25901000" />
+      <workItem from="1526431632903" duration="26102000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214962000" />
+    <option name="totallyTimeSpent" value="215163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -794,10 +794,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="306" column="23" lean-forward="true" selection-start-line="306" selection-start-column="23" selection-end-line="306" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
-          <caret line="341" column="0" lean-forward="false" selection-start-line="341" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
+          <caret line="341" column="46" lean-forward="true" selection-start-line="341" selection-start-column="46" selection-end-line="341" selection-end-column="46" />
           <folding>
             <element signature="e#1107#1699#0" expanded="false" />
             <element signature="e#1758#5489#0" expanded="false" />
@@ -806,14 +814,6 @@
             <element signature="e#7983#8251#0" expanded="false" />
             <element signature="e#8335#8684#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="306" column="23" lean-forward="true" selection-start-line="306" selection-start-column="23" selection-end-line="306" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
