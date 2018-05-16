@@ -75,6 +75,7 @@
     margin-right:4rem;
 }
 .cont{
+    position: relative;
     height: 26rem;
     margin-right:0.5rem;
 }
@@ -303,5 +304,8 @@ audio{
 }
 /*canvas画布*/
 #myCanvas{
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
