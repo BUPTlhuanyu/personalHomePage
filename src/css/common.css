@@ -168,4 +168,7 @@ body{
     .head-active{
         display:block;
     }
+    header{
+        display:none;
+    }
 }

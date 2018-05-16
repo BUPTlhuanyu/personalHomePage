@@ -93,9 +93,6 @@
     .top-box,.bottom-box .primary,.bottom-box .secondary{
         margin-top:16px;
     }
-    header{
-        display:none;
-    }
 }
 audio{
     width:0;

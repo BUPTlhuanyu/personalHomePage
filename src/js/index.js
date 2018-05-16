@@ -238,7 +238,7 @@ window.onload=function(){
                 //对文字抽取的像素点的信息存储在getImageData返回的imageData对象的data属性中
                 data = this.ctx.getImageData(xStart, yStart, this.size * this.length, this.size).data;
             //即对文字抽取的像素点进行抽样的间隔，也就是每gap个像素取一个像素
-            var gap = 2;
+            var gap = 4;
             var positions = [], x = xStart, y = yStart;
             for(var i = 0;i < data.length; i += 4 * gap){
                 //判断这个像素是否可见，如果可见存入文字微粒化后的数组中，否则丢弃
@@ -286,7 +286,7 @@ window.onload=function(){
             this.x += this.dx;
             this.y += this.dy;
         },
-        render:function(ctx,){
+        render:function(ctx){
             this.go();
             ctx.beginPath();
             ctx.arc(this.x,this.y,this.size,0,360,false);
@@ -320,9 +320,11 @@ window.onload=function(){
             //每一个微粒的目标地点都是dots的坐标
             //每一个微粒都随机出生在画布的某个位置
             for(var i = 0; i < dots.length; i++){
+                var color=~~(Math.random()*100);
                 this.particles.push(
-                    new Particle(Math.random() * this.width, Math.random() * this.height,1
-                        ,'rgba(255,255,255,1)',dots[i].x,dots[i].y , 30)
+                    new Particle(Math.random() * this.width, Math.random() * this.height,
+                        2,'rgba('+color+','+color+','+color+',1)',
+                        dots[i].x,dots[i].y ,30)
                 );
             }
         },
