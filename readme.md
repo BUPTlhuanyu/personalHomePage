@@ -42,6 +42,9 @@
     本地的JSON数据，跳过了跨域这样的一个问题。
 +   audio音频对象的使用
 +   通过js改变伪类hover的样式:通过在css中写两个class然后，通过DOM的className或者classList选用class
++   利用canvas文字粒子效果：imageData对象，文字微粒化，随机粒子运动
+
+
 
 ![图片](https://github.com/BUPTlhuanyu/personalHomePage/blob/master/mainForPC-1.png)
 ![图片](https://github.com/BUPTlhuanyu/personalHomePage/blob/master/mainForPC-2.png)
