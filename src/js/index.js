@@ -411,9 +411,12 @@ window.onload=function(){
     life.addEventListener('click',goLive);
     function goLive(){
         new Promise(function(resolve,reject){
-            var lifeLink=document.getElementsByTagName('link')[1];
+            var lifeLink=document.createElement('link');
+            lifeLink.rel="stylesheet";
+            lifeLink.type="text/css";
             lifeLink.href='./pages/life.css';
-            lifeLink.type='text/css';
+            var head=document.getElementsByTagName('head')[0];
+            head.appendChild(lifeLink);
             var liveUrl="./pages/life.html";
             function getAjaxData(data){resolve(data);}
             getAjax(liveUrl,getAjaxData);
