@@ -383,7 +383,8 @@ window.onload=function(){
     canvas.init();
 
     /*ajax局部刷新页面*/
-    var life=document.getElementById('life');
+    var lifePc=document.getElementById('life-pc');
+    var lifeMobile=document.getElementById('life-mobile');
     //不用promise
     // life.addEventListener('click',getAjaxData);
     // function getAjaxData(){
@@ -407,7 +408,8 @@ window.onload=function(){
     //     josnp();
     // }
     // 利用promise异步处理
-    life.addEventListener('click',goLive);
+    lifePc.addEventListener('click',goLive);
+    lifeMobile.addEventListener('click',goLive);
     function goLive(){
         new Promise(function(resolve,reject){
             // var lifeLink=document.createElement('link');
@@ -416,9 +418,9 @@ window.onload=function(){
             // lifeLink.href='./pages/life.css';
             // var head=document.getElementsByTagName('head')[0];
             // head.appendChild(lifeLink);
-            var liveUrl="./pages/life.html";
+            var lifeUrl="./pages/life.html";
             function getAjaxData(data){resolve(data);}
-            getAjax(liveUrl,getAjaxData);
+            getAjax(lifeUrl,getAjaxData);
         }).then(function(data){
             var aim=document.getElementsByClassName('content')[0];
             aim.outerHTML=data;
