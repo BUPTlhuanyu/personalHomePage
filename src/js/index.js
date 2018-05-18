@@ -385,6 +385,11 @@ window.onload=function(){
     /*ajax局部刷新页面*/
     var life=document.getElementById('life');
     //不用promise
+    // life.addEventListener('click',getAjaxData);
+    // function getAjaxData(){
+    //     var liveUrl="./pages/life.html";
+    //     getAjax(liveUrl,pain);
+    // }
     // function pain(data){
     //     var lifeLink=document.getElementsByTagName('link')[1];
     //     lifeLink.href='./pages/life.css';
@@ -401,21 +406,17 @@ window.onload=function(){
     //     db=document.getElementById('db-cont');
     //     josnp();
     // }
-    // life.addEventListener('click',getAjaxData);
-    // function getAjaxData(){
-    //     var liveUrl="./pages/life.html";
-    //     getAjax(liveUrl,pain);
-    // }
+
     // 利用promise异步处理
     life.addEventListener('click',goLive);
     function goLive(){
         new Promise(function(resolve,reject){
+            var lifeLink=document.getElementsByTagName('link')[1];
+            lifeLink.href='./pages/life.css';
             var liveUrl="./pages/life.html";
             function getAjaxData(data){resolve(data);}
             getAjax(liveUrl,getAjaxData);
         }).then(function(data){
-            var lifeLink=document.getElementsByTagName('link')[1];
-            lifeLink.href='./pages/life.css';
             var aim=document.getElementsByClassName('content')[0];
             aim.innerHTML=data;
             // 利用DocumentFragment，然后append
