@@ -406,22 +406,22 @@ window.onload=function(){
     //     db=document.getElementById('db-cont');
     //     josnp();
     // }
-    var lifeLink=document.createElement('link');
-    lifeLink.rel="stylesheet";
-    lifeLink.type="text/css";
-    lifeLink.href='./pages/life.css';
-    var head=document.getElementsByTagName('head')[0];
-    head.appendChild(lifeLink);
     // 利用promise异步处理
     life.addEventListener('click',goLive);
     function goLive(){
         new Promise(function(resolve,reject){
+            // var lifeLink=document.createElement('link');
+            // lifeLink.rel="stylesheet";
+            // lifeLink.type="text/css";
+            // lifeLink.href='./pages/life.css';
+            // var head=document.getElementsByTagName('head')[0];
+            // head.appendChild(lifeLink);
             var liveUrl="./pages/life.html";
             function getAjaxData(data){resolve(data);}
             getAjax(liveUrl,getAjaxData);
         }).then(function(data){
             var aim=document.getElementsByClassName('content')[0];
-            aim.innerHTML=data;
+            aim.outerHTML=data;
             // 利用DocumentFragment，然后append
             var navBarActive=document.getElementsByClassName('nav-bar-active')[0];
             var navActive=document.getElementsByClassName('nav-active')[0];

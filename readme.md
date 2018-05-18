@@ -45,6 +45,9 @@
 +   利用canvas文字粒子效果：imageData对象，文字微粒化，随机粒子运动
 +   ajax局部更新，promise异步编程管理(对应部分其实不需要promise，直接ajax的onreadystatechange事件就ok)
 
+#####
+     gitnub.io的在线预览的经验：github不是CDN静态资源缓存代理所以想要动态添加外部css文件或者js文件是行不通的，所以这里静态导入了所有需要的css
+
 
 
 ![图片](https://github.com/BUPTlhuanyu/personalHomePage/blob/master/mainForPC-1.png)
