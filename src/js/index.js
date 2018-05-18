@@ -413,6 +413,7 @@ window.onload=function(){
         new Promise(function(resolve,reject){
             var lifeLink=document.getElementsByTagName('link')[1];
             lifeLink.href='./pages/life.css';
+            lifeLink.type='text/css';
             var liveUrl="./pages/life.html";
             function getAjaxData(data){resolve(data);}
             getAjax(liveUrl,getAjaxData);
