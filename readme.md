@@ -44,6 +44,7 @@
 +   通过js改变伪类hover的样式:通过在css中写两个class然后，通过DOM的className或者classList选用class
 +   利用canvas文字粒子效果：imageData对象，文字微粒化，随机粒子运动
 +   ajax局部更新，promise异步编程管理(对应部分其实不需要promise，直接ajax的onreadystatechange事件就ok)
++   原生js实现简单的hash路由（回退未完成），vue-router的一种路由实现原理也是如此：在主vue文件中放置一个router-view，检测路径，然后将路径对应的组件渲染到router-view
 
 #####
      gitnub.io的在线预览的经验：github不是CDN静态资源缓存代理所以想要动态添加外部css文件或者js文件是行不通的，所以这里静态导入了所有需要的css

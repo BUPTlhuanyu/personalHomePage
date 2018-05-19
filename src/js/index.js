@@ -35,7 +35,28 @@ function showImg(data){
     }
     db.appendChild(fragment);
 }
-window.onload=function(){
+function getAjax(url,fn){
+    function createXHR(){
+        try{
+            return new XMLHttpRequest();
+        }catch (e){
+
+        }
+    }
+    var xhr=createXHR();
+    xhr.open("get",url);
+    xhr.send(null);
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState==4){
+            if((xhr.status<=200 && xhr.status<300)|| xhr.status==304){
+                fn(xhr.responseText);
+            }else{
+                alert('unsuccessful'+xhr.status);
+            }
+        }
+    };
+}
+function homeJob(){
     /*弹框*/
     var navBarActive=document.getElementsByClassName('nav-bar-active')[0];
     var navActive=document.getElementsByClassName('nav-active')[0];
@@ -57,27 +78,6 @@ window.onload=function(){
     var progressDot=document.getElementById('progressDot');
     var progressBar=document.getElementById('progressBar');
     var musicUrl="../source/JSON/musicJSON.json";
-    function getAjax(url,fn){
-        function createXHR(){
-            try{
-                return new XMLHttpRequest();
-            }catch (e){
-
-            }
-        }
-        var xhr=createXHR();
-        xhr.open("get",url);
-        xhr.send(null);
-        xhr.onreadystatechange=function(){
-            if(xhr.readyState==4){
-                if((xhr.status<=200 && xhr.status<300)|| xhr.status==304){
-                    fn(xhr.responseText);
-                }else{
-                    alert('unsuccessful'+xhr.status);
-                }
-            }
-        };
-    }
     getAjax(musicUrl,music);
     function music(musicData){
         var data=JSON.parse(musicData).result.tracks,len=data.length,stopState=1,
@@ -381,59 +381,91 @@ window.onload=function(){
     //获取文字内容的坐标
     var dots=ShapeBuilder.getPositions();
     canvas.init();
-
-    /*ajax局部刷新页面*/
-    var lifePc=document.getElementById('life-pc');
-    var lifeMobile=document.getElementById('life-mobile');
-    //不用promise
-    // life.addEventListener('click',getAjaxData);
-    // function getAjaxData(){
-    //     var liveUrl="./pages/life.html";
-    //     getAjax(liveUrl,pain);
-    // }
-    // function pain(data){
-    //     var lifeLink=document.getElementsByTagName('link')[1];
-    //     lifeLink.href='./pages/life.css';
-    //     var aim=document.getElementsByClassName('content')[0];
-    //     aim.innerHTML=data;
-    //     // 利用DocumentFragment，然后append
-    //     var navBarActive=document.getElementsByClassName('nav-bar-active')[0];
-    //     var navActive=document.getElementsByClassName('nav-active')[0];
-    //     navBarActive.onclick = function ()
-    //     {
-    //         var style = navActive.style;
-    //         style.display = style.display == "block" ? "none" : "block";
-    //     };
-    //     db=document.getElementById('db-cont');
-    //     josnp();
-    // }
-    // 利用promise异步处理
-    lifePc.addEventListener('click',goLive);
-    lifeMobile.addEventListener('click',goLive);
-    function goLive(){
-        new Promise(function(resolve,reject){
-            // var lifeLink=document.createElement('link');
-            // lifeLink.rel="stylesheet";
-            // lifeLink.type="text/css";
-            // lifeLink.href='./pages/life.css';
-            // var head=document.getElementsByTagName('head')[0];
-            // head.appendChild(lifeLink);
-            var lifeUrl="./pages/life.html";
-            function getAjaxData(data){resolve(data);}
-            getAjax(lifeUrl,getAjaxData);
-        }).then(function(data){
-            var aim=document.getElementsByClassName('content')[0];
-            aim.outerHTML=data;
-            // 利用DocumentFragment，然后append
-            var navBarActive=document.getElementsByClassName('nav-bar-active')[0];
-            var navActive=document.getElementsByClassName('nav-active')[0];
-            navBarActive.onclick = function ()
-            {
-                var style = navActive.style;
-                style.display = style.display == "block" ? "none" : "block";
-            };
-            db=document.getElementById('db-cont');
-            josnp();
-        });
+}
+//es6版本
+// class Router {
+//     constructor() {
+//         this.routesSet = {};
+//         this.currentHash = '';
+//     }
+//
+//     addRoute(path, callback = function () {
+//     }) {
+//         if (callback && Object.prototype.toString.call(callback) === '[object Function]') {
+//             this.routesSet[path] = callback;
+//         }
+//     }
+//
+//     updateView() {
+//         this.currentHash = location.hash.trim();
+//         this.routesSet[this.currentHash] && this.routesSet[this.currentHash]();
+//     }
+//
+//     init() {
+//         window.addEventListener('load', this.updateView.bind(this));
+//         window.addEventListener('hashchange', this.updateView.bind(this));
+//     }
+// }
+//es5版本
+ function Router(){
+     this.routesSet = {};
+     this.currentHash = '';
+ }
+Router.prototype={
+    constructor:Router,
+    addRoute:function(path,callback) {
+        if (callback && Object.prototype.toString.call(callback) === '[object Function]') {
+            this.routesSet[path] = callback;
+        }
+    },
+    updateView:function(){
+        this.currentHash = location.hash.slice(1)||"/";
+        this.routesSet[this.currentHash] && this.routesSet[this.currentHash]();
+    },
+    init:function(){
+        window.addEventListener('load', this.updateView.bind(this));
+        window.addEventListener('hashchange', this.updateView.bind(this));
     }
 };
+function goHome(){
+    new Promise(function(resolve,reject){
+        var homeUrl="./pages/home.html";
+        function getAjaxData(data){resolve(data);}
+        getAjax(homeUrl,getAjaxData);
+        }
+    ).then(function(data){
+        var routerView=document.getElementById('router-view');
+        routerView.innerHTML=data;
+        homeJob();
+    });
+}
+function goLive(){
+    new Promise(function(resolve,reject){
+        // var lifeLink=document.createElement('link');
+        // lifeLink.rel="stylesheet";
+        // lifeLink.type="text/css";
+        // lifeLink.href='./pages/life.css';
+        // var head=document.getElementsByTagName('head')[0];
+        // head.appendChild(lifeLink);
+        var lifeUrl="./pages/life.html";
+        function getAjaxData(data){resolve(data);}
+        getAjax(lifeUrl,getAjaxData);
+    }).then(function(data){
+        var routerView=document.getElementById('router-view');
+        routerView.innerHTML=data;
+        // 利用DocumentFragment，然后append
+        var navBarActive=document.getElementsByClassName('nav-bar-active')[0];
+        var navActive=document.getElementsByClassName('nav-active')[0];
+        navBarActive.onclick = function ()
+        {
+            var style = navActive.style;
+            style.display = style.display == "block" ? "none" : "block";
+        };
+        db=document.getElementById('db-cont');
+        josnp();
+    });
+}
+var router=new Router();
+router.init();
+router.addRoute('/life',goLive);
+router.addRoute('/',goHome);
