@@ -428,6 +428,7 @@ Router.prototype={
     }
 };
 function goHome(){
+    window.location.hash="/";
     new Promise(function(resolve,reject){
         var homeUrl="./pages/home.html";
         function getAjaxData(data){resolve(data);}
@@ -440,6 +441,7 @@ function goHome(){
     });
 }
 function goLive(){
+    window.location.hash="/life";
     new Promise(function(resolve,reject){
         // var lifeLink=document.createElement('link');
         // lifeLink.rel="stylesheet";
@@ -453,14 +455,6 @@ function goLive(){
     }).then(function(data){
         var routerView=document.getElementById('router-view');
         routerView.innerHTML=data;
-        // 利用DocumentFragment，然后append
-        var navBarActive=document.getElementsByClassName('nav-bar-active')[0];
-        var navActive=document.getElementsByClassName('nav-active')[0];
-        navBarActive.onclick = function ()
-        {
-            var style = navActive.style;
-            style.display = style.display == "block" ? "none" : "block";
-        };
         db=document.getElementById('db-cont');
         josnp();
     });
