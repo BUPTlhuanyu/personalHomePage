@@ -57,9 +57,6 @@ function getAjax(url,fn){
     };
 }
 function homeJob(){
-    /*访问量*/
-    var visited=document.getElementById('visited');
-    visited.textContent="you are the: "+history.HistoryItem.title+history.HistoryItem.visitCount;
     /*弹框*/
     var navBarActive=document.getElementsByClassName('nav-bar-active')[0];
     var navActive=document.getElementsByClassName('nav-active')[0];
