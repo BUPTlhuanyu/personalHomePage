@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a47252b9-49d9-4c49-ac66-ad4dba6fc46c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/index.js" afterPath="$PROJECT_DIR$/src/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/src/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="448" column="96" lean-forward="false" selection-start-line="448" selection-start-column="23" selection-end-line="448" selection-end-column="96" />
+              <caret line="448" column="98" lean-forward="true" selection-start-line="448" selection-start-column="98" selection-end-line="448" selection-end-column="98" />
               <folding>
                 <element signature="n#!!block;n#getAjax#0" expanded="false" />
                 <element signature="e#13820#13827#0" expanded="false" />
@@ -532,7 +532,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262889000" />
+    <option name="totallyTimeSpent" value="263640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1456" height="860" extended-state="0" />
@@ -821,7 +821,7 @@
     <entry file="file://$PROJECT_DIR$/src/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="448" column="96" lean-forward="false" selection-start-line="448" selection-start-column="23" selection-end-line="448" selection-end-column="96" />
+          <caret line="448" column="98" lean-forward="true" selection-start-line="448" selection-start-column="98" selection-end-line="448" selection-end-column="98" />
           <folding>
             <element signature="n#!!block;n#getAjax#0" expanded="false" />
             <element signature="e#13820#13827#0" expanded="false" />
