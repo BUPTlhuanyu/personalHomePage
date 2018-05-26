@@ -443,12 +443,12 @@ function goHome(){
 function goLive(){
     window.location.hash="/life";
     new Promise(function(resolve,reject){
-        var lifeLink=document.createElement('link');
-        lifeLink.rel="stylesheet";
-        lifeLink.type="text/css";
-        lifeLink.href='./pages/life.css';
-        var head=document.getElementsByTagName('head')[0];
-        head.appendChild(lifeLink);
+        // var lifeLink=document.createElement('link');
+        // lifeLink.rel="stylesheet";
+        // lifeLink.type="text/css";
+        // lifeLink.href='./pages/life.css';
+        // var head=document.getElementsByTagName('head')[0];
+        // head.appendChild(lifeLink);
         var lifeUrl="./pages/life.html";
         function getAjaxData(data){resolve(data);}
         getAjax(lifeUrl,getAjaxData);
