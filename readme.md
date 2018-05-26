@@ -1,7 +1,7 @@
 一个建设中的个人网站
 ====
 
-[主页](http://htmlpreview.github.io/?https://github.com/BUPTlhuanyu/personalHomePage/blob/master/src/index.html)
+[主页](http://htmlpreview.github.io/?https://github.com/BUPTlhuanyu/personalHomePage/blob/lhy/src/index.html)
 
 ####
     打算写两个版本，原生js版本以及vue版本或者react版本
