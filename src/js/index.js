@@ -446,7 +446,7 @@ function goLive(){
         var lifeLink=document.createElement('link');
         lifeLink.rel="stylesheet";
         lifeLink.type="text/css";
-        lifeLink.href='https://rawgithubusercontent.com/BUPTlhuanyu/personalHomePage/master/src/css/common.css';
+        lifeLink.href='https://rawgit.com/BUPTlhuanyu/personalHomePage/master/src/css/common.css';
         var head=document.getElementsByTagName('head')[0];
         head.appendChild(lifeLink);
         var lifeUrl="./pages/life.html";
