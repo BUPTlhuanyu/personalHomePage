@@ -446,7 +446,7 @@ function goLive(){
         var lifeLink=document.createElement('link');
         lifeLink.rel="stylesheet";
         lifeLink.type="text/css";
-        lifeLink.href='https://gitcdn.link/repo/BUPTlhuanyu/personalHomePage/master/src/pages/life.css';
+        lifeLink.href='https://gitcdn.link/repo/BUPTlhuanyu/personalHomePage/lhy/src/pages/life.css';
         var head=document.getElementsByTagName('head')[0];
         head.appendChild(lifeLink);
         var lifeUrl="./pages/life.html";
