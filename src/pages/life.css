@@ -24,3 +24,8 @@
 .foot-wrap{
     margin-top:-3rem;
 }
+@media screen and (max-width:940px){
+    #db-cont img{
+        width:100%;
+    }
+}
