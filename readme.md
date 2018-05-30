@@ -45,6 +45,31 @@
 +   利用canvas文字粒子效果：imageData对象，文字微粒化，随机粒子运动
 +   ajax局部更新，promise异步编程管理(对应部分其实不需要promise，直接ajax的onreadystatechange事件就ok)
 +   原生js实现简单的hash路由（回退未完成），vue-router的一种路由实现原理也是如此：在主vue文件中放置一个router-view，检测路径，然后将路径对应的组件渲染到router-view
++   在前端路由中，由于本网页不同界面有公共的组件，所以将重复组件即导航的点击事件一次性添加。解决方法有两个：
+    1、在初始化路由的时候，需要先给路由添加路由表；为了不给元素重复添加相同的事件，可以在路由初始化的onload中添加一个回调函数，回调函数中给元素添加事件
+    ```
+        updateView:function(){
+            this.currentHash = location.hash.slice(1)||"/";
+            this.routesSet[this.currentHash] && this.routesSet[this.currentHash]();
+        },
+        init:function(){
+            window.addEventListener('load', function (){
+                this.updateView.bind(this)();
+                /*弹框*/
+                var navBarActive=document.getElementsByClassName('nav-bar-active')[0];
+                var navActive=document.getElementsByClassName('nav-active')[0];
+                navBarActive.onclick = function ()
+                {
+                    var style = navActive.style;
+                    style.display = style.display == "block" ? "none" : "block";
+                };
+            }.apply(this));
+            window.addEventListener('hashchange', this.updateView.bind(this));
+        }
+    ```
+    2、在初始化路由的时候，需要先给路由添加路由表；可以利用在函数的执行过程中重写该函数，也就是惰性载入函数来解决这样的问题，但这样也就导致需要考虑一些其他的因素
+    3、在初始化路由的时候，需要先给路由添加路由表；可以利用一个标志来标记状态，状态为true则添加事件（比如跳转到home，那么gohome里面的事件可以不重新添加），否则不需要重复添加
+       如果是刷新的，那么需要重新添加事件，也就是改变状态。当然可能还有其他的一些细节需要考虑
 
 #####
      gitnub.io的在线预览的经验：github不是CDN静态资源缓存代理所以想要动态添加外部css文件或者js文件是行不通的，所以这里静态导入了所有需要的css

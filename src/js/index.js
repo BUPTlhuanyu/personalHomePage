@@ -57,14 +57,14 @@ function getAjax(url,fn){
     };
 }
 function homeJob(){
-    /*弹框*/
-    var navBarActive=document.getElementsByClassName('nav-bar-active')[0];
-    var navActive=document.getElementsByClassName('nav-active')[0];
-    navBarActive.onclick = function ()
-    {
-        var style = navActive.style;
-        style.display = style.display == "block" ? "none" : "block";
-    };
+    // /*弹框*/
+    // var navBarActive=document.getElementsByClassName('nav-bar-active')[0];
+    // var navActive=document.getElementsByClassName('nav-active')[0];
+    // navBarActive.onclick = function ()
+    // {
+    //     var style = navActive.style;
+    //     style.display = style.display == "block" ? "none" : "block";
+    // };
     /*获取音乐资源*/
     var audio=document.getElementsByTagName('audio')[0];
     var playControl=document.getElementsByClassName('stop-control')[0];
@@ -423,9 +423,23 @@ Router.prototype={
         this.routesSet[this.currentHash] && this.routesSet[this.currentHash]();
     },
     init:function(){
-        window.addEventListener('load', this.updateView.bind(this));
+        window.addEventListener('load', function (){
+            this.updateView.bind(this)();
+            /*弹框*/
+            var navBarActive=document.getElementsByClassName('nav-bar-active')[0];
+            var navActive=document.getElementsByClassName('nav-active')[0];
+            navBarActive.onclick = function ()
+            {
+                var style = navActive.style;
+                style.display = style.display == "block" ? "none" : "block";
+            };
+        }.apply(this));
         window.addEventListener('hashchange', this.updateView.bind(this));
     }
+    // init:function(){
+    //     window.addEventListener('load', this.updateView.bind(this));
+    //     window.addEventListener('hashchange', this.updateView.bind(this));
+    // }
 };
 function goHome(){
     window.location.hash="/";
@@ -460,6 +474,8 @@ function goLive(){
     });
 }
 var router=new Router();
-router.init();
+//首先添加路由之后，再初始化，否则会出现初始化的时候，路由回调函数未定义
 router.addRoute('/life',goLive);
 router.addRoute('/',goHome);
+router.init();
+
