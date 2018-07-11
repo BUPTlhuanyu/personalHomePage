@@ -1,8 +1,8 @@
 // 回调执行函数,异步执行函数在全局作用域下调用所以定义在全局
 var movData=null,db=null;
 /*跨域:Jsonp （豆瓣的这个api不支持websocket，服务器有拦截）*/
-function josnp(){
-    //josnp获取豆瓣电影正在热映的json数据
+function jsonp(){
+    //jsonp获取豆瓣电影正在热映的json数据
     var script = document.createElement('script');
     script.type = 'text/javascript';
 
@@ -470,7 +470,7 @@ function goLive(){
         var routerView=document.getElementById('router-view');
         routerView.innerHTML=data;
         db=document.getElementById('db-cont');
-            josnp();
+        jsonp();
     });
 }
 var router=new Router();
