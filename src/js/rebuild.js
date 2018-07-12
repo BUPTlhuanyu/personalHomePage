@@ -71,10 +71,15 @@
     //     }
     // }
     //es5版本
-    $lhy.Router=function() {
+    //安全模式，防止直接运行$lhy.Router()出错，限制了该放法只能用于创建实例
+    $lhy.Router = function () {
+        if(!(this instanceof $lhy.Router)){
+            return new $lhy.Router();
+        }else{
             this.routesSet = {};
             this.currentHash = '';
         }
+    }
 
     $lhy.Router.prototype = {
         constructor: $lhy.Router,
@@ -498,7 +503,7 @@ function goHome() {
                 resolve(data);
             }
 
-        $lhy.getAjax(homeUrl, getAjaxData);
+            $lhy.getAjax(homeUrl, getAjaxData);
         }
     ).then(function (data) {
         var routerView = document.getElementById('router-view');
