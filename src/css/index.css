@@ -110,12 +110,12 @@ audio{
     display:block;
 }
 .stop-control:hover{
-    background:hsla(0,0%,100%,.5) url(../img/stop.png) no-repeat center;
-    background-size: 32%;
+    background:hsla(0,0%,100%,.5) url(../img/stop.svg) no-repeat center;
+    background-size: 45%;
 }
 .play-control:hover{
-    background:hsla(0,0%,100%,.5) url(../img/play.png) no-repeat center;
-    background-size: 32%;
+    background:hsla(0,0%,100%,.5) url(../img/play.svg) no-repeat center;
+    background-size: 45%;
 }
 
 #music-control{
@@ -131,8 +131,8 @@ audio{
     text-align: center;
     width: 13%;
     height: 100%;
-    background: url(../img/next.png) no-repeat center;
-    background-size: 40%;
+    background: url(../img/next.svg) no-repeat center;
+    background-size: 45%;
 }
 
 
@@ -164,12 +164,12 @@ audio{
     height:100%;
 }
 .volumeMore{
-    background: url(../img/voice.png) no-repeat center;
+    background: url(../img/voice.svg) no-repeat center;
     background-size: 45%;
 }
 .volumeLess{
-    background: url(../img/voiceless.png) no-repeat center;
-    background-size: 28%;
+    background: url(../img/voiceless.svg) no-repeat center;
+    background-size: 45%;
 }
 
 .progress-bar-bg {
@@ -267,7 +267,7 @@ audio{
 }
 
 #mask .quit span{
-    background:url("../img/fork.png") no-repeat right center;
+    background:url("../img/fork.svg") no-repeat right center;
     background-size: cover;
     cursor: pointer;
     border:0;

@@ -73,9 +73,9 @@
     //es5版本
     //安全模式，防止直接运行$lhy.Router()出错，限制了该放法只能用于创建实例
     $lhy.Router = function () {
-        if(!(this instanceof $lhy.Router)){
+        if (!(this instanceof $lhy.Router)) {
             return new $lhy.Router();
-        }else{
+        } else {
             this.routesSet = {};
             this.currentHash = '';
         }
@@ -110,6 +110,7 @@
         //     window.addEventListener('hashchange', this.updateView.bind(this));
         // }
     };
+
     $lhy.prototye = {
         // jsonp:function(src){
         //     //jsonp获取豆瓣电影正在热映的json数据
@@ -190,8 +191,6 @@ function homeJob() {
             musicImg.style.cssText = ";background:url(" + songPic + ")no-repeat center;background-size:cover;";
             //showDetail
             songDetail.textContent = singerName + ":" + songName;
-
-
         }
 
         function formatTime(minutes, seconds) {
