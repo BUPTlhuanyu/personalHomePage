@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a47252b9-49d9-4c49-ac66-ad4dba6fc46c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/voice.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/voiceless.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/index.css" afterPath="$PROJECT_DIR$/src/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/rebuild.js" afterPath="$PROJECT_DIR$/src/js/rebuild.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -63,7 +60,7 @@
             <entry file="file://$PROJECT_DIR$/source/icon_9izamr4z0jp/叉叉.svg">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
-                  <caret line="0" column="8" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+                  <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -86,11 +83,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/css/index.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="297">
-                  <caret line="162" column="11" lean-forward="false" selection-start-line="162" selection-start-column="11" selection-end-line="162" selection-end-column="11" />
+                <state relative-caret-position="2355">
+                  <caret line="157" column="28" lean-forward="false" selection-start-line="157" selection-start-column="28" selection-end-line="157" selection-end-column="28" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="rebuild.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/js/rebuild.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="266">
+                  <caret line="210" column="50" lean-forward="true" selection-start-line="210" selection-start-column="50" selection-end-line="210" selection-end-column="50" />
                   <folding />
                 </state>
               </provider>
@@ -133,87 +140,16 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="next.svg" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/img/next.svg">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/js/index.js">
+        <leaf>
+          <file leaf-file-name="rebuild.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/js/rebuild.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="750">
-                  <caret line="458" column="30" lean-forward="true" selection-start-line="458" selection-start-column="30" selection-end-line="458" selection-end-column="30" />
-                  <folding>
-                    <element signature="e#1115#1215#0" expanded="false" />
-                    <element signature="n#!!block;n#formatTime#0;n#!!block;n#music#0;n#!!block;n#homeJob#0" expanded="false" />
-                    <element signature="n#!!block;n#showCurrentTime#0;n#!!block;n#music#0;n#!!block;n#homeJob#0" expanded="false" />
-                    <element signature="n#!!block;n#getSongUrl#0;n#!!block;n#music#0;n#!!block;n#homeJob#0" expanded="false" />
-                    <element signature="e#4890#4931#0" expanded="false" />
-                    <element signature="e#4935#4976#0" expanded="false" />
-                    <element signature="n#!!block;n#Change#0;n#!!block;n#music#0;n#!!block;n#homeJob#0" expanded="false" />
-                    <element signature="e#5174#5311#0" expanded="false" />
-                    <element signature="e#5315#5453#0" expanded="false" />
-                    <element signature="n#!!block;n#nextSong#0;n#!!block;n#music#0;n#!!block;n#homeJob#0" expanded="false" />
-                    <element signature="n#!!block;n#volumeChange#0;n#!!block;n#music#0;n#!!block;n#homeJob#0" expanded="false" />
-                    <element signature="e#5775#5837#0" expanded="false" />
-                    <element signature="e#5841#5903#0" expanded="false" />
-                    <element signature="n#!!block;n#autoNext#0;n#!!block;n#music#0;n#!!block;n#homeJob#0" expanded="false" />
-                    <element signature="n#!!block;n#timeSelect#0;n#!!block;n#music#0;n#!!block;n#homeJob#0" expanded="false" />
-                    <element signature="e#6690#6700#0" expanded="false" />
-                    <element signature="n#!!block;n#book#0;n#!!block;n#homeJob#0" expanded="false" />
-                    <element signature="n#!!block;n#showKeys#0;n#!!block;n#book#0;n#!!block;n#homeJob#0" expanded="false" />
-                    <element signature="e#7297#7853#0" expanded="false" />
-                    <element signature="e#7420#7750#0" expanded="false" />
-                    <element signature="e#7597#7679#0" expanded="false" />
-                    <element signature="e#7899#8227#0" expanded="false" />
-                    <element signature="e#8109#8175#0" expanded="false" />
-                    <element signature="n#!!block;n#closeMask#0;n#!!block;n#homeJob#0" expanded="false" />
-                    <element signature="e#8495#8609#0" expanded="false" />
-                    <element signature="e#8844#8854#0" expanded="false" />
-                    <element signature="e#8915#8941#0" expanded="false" />
-                    <element signature="e#9106#11195#0" expanded="false" />
-                    <element signature="e#9191#9459#0" expanded="false" />
-                    <element signature="e#9543#9892#0" expanded="false" />
-                    <element signature="e#9925#11189#0" expanded="false" />
-                    <element signature="e#10214#10270#0" expanded="false" />
-                    <element signature="e#10703#11149#0" expanded="false" />
-                    <element signature="e#10789#10856#0" expanded="false" />
-                    <element signature="e#10996#11135#0" expanded="false" />
-                    <element signature="n#!!block;n#Particle#0;n#!!block;n#homeJob#0" expanded="false" />
-                    <element signature="e#11630#12218#0" expanded="false" />
-                    <element signature="e#11683#11937#0" expanded="false" />
-                    <element signature="e#11753#11865#0" expanded="false" />
-                    <element signature="e#11967#12212#0" expanded="false" />
-                    <element signature="e#12248#13544#0" expanded="false" />
-                    <element signature="e#12273#12441#0" expanded="false" />
-                    <element signature="e#12473#12725#0" expanded="false" />
-                    <element signature="e#12761#13226#0" expanded="false" />
-                    <element signature="e#12775#12792#0" expanded="false" />
-                    <element signature="e#12908#13216#0" expanded="false" />
-                    <element signature="e#13251#13538#0" expanded="false" />
-                    <element signature="e#13461#13528#0" expanded="false" />
-                    <element signature="e#13844#13851#0" expanded="false" />
-                    <element signature="n#!!block;n#Router#0" expanded="false" />
-                    <element signature="e#14649#15819#0" expanded="false" />
-                    <element signature="e#14712#14866#0" expanded="false" />
-                    <element signature="e#14804#14860#0" expanded="false" />
-                    <element signature="e#14893#15036#0" expanded="false" />
-                    <element signature="e#15057#15634#0" expanded="false" />
-                    <element signature="e#15110#15539#0" expanded="false" />
-                    <element signature="e#15166#15172#0" expanded="false" />
-                    <element signature="e#15391#15528#0" expanded="false" />
-                    <element signature="e#15639#15658#0" expanded="false" />
-                    <element signature="e#15910#16051#0" expanded="false" />
-                  </folding>
+                <state relative-caret-position="384">
+                  <caret line="126" column="85" lean-forward="true" selection-start-line="126" selection-start-column="85" selection-end-line="126" selection-end-column="85" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -234,7 +170,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jQuery.fn</find>
       <find>getAjax</find>
       <find>Router</find>
       <find>homeJob</find>
@@ -264,6 +199,7 @@
       <find>next.svg</find>
       <find>.svg</find>
       <find>volum</find>
+      <find>audio</find>
     </findStrings>
     <replaceStrings>
       <replace>images</replace>
@@ -316,9 +252,9 @@
         <option value="$PROJECT_DIR$/src/js/index.js" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/js/jquery-3.3.1.js" />
-        <option value="$PROJECT_DIR$/src/js/rebuild.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/css/index.css" />
+        <option value="$PROJECT_DIR$/src/js/rebuild.js" />
       </list>
     </option>
   </component>
@@ -364,36 +300,7 @@
             <path>
               <item name="personalHomePage" type="b2602c69:ProjectViewProjectNode" />
               <item name="personalHomePage" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personalHomePage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personalHomePage" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="icon_9izamr4z0jp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personalHomePage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personalHomePage" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="icon_xkza6kpweeo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personalHomePage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personalHomePage" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personalHomePage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personalHomePage" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personalHomePage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personalHomePage" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="personalHomePage" type="b2602c69:ProjectViewProjectNode" />
@@ -603,31 +510,34 @@
       <workItem from="1531574399248" duration="139000" />
       <workItem from="1531836709010" duration="1331000" />
       <workItem from="1531879907916" duration="65000" />
-      <workItem from="1531880907806" duration="786000" />
+      <workItem from="1531880907806" duration="1001000" />
+      <workItem from="1531911832406" duration="2590000" />
+      <workItem from="1531921938999" duration="4041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="339194000" />
+    <option name="totallyTimeSpent" value="346040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21916842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21916842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31283423" sideWeight="0.5028169" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328877" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328877" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1789601" sideWeight="0.49718308" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39973262" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1789601" sideWeight="0.49718308" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39973262" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -642,7 +552,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1789601" sideWeight="0.49718308" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21916842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -717,7 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -753,14 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1230">
           <caret line="161" column="33" lean-forward="false" selection-start-line="161" selection-start-column="19" selection-end-line="161" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/rebuild.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7815">
-          <caret line="521" column="38" lean-forward="false" selection-start-line="521" selection-start-column="38" selection-end-line="521" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -805,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,7 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,8 +758,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="458" column="30" lean-forward="true" selection-start-line="458" selection-start-column="30" selection-end-line="458" selection-end-column="30" />
+        <state relative-caret-position="602">
+          <caret line="458" column="30" lean-forward="false" selection-start-line="458" selection-start-column="30" selection-end-line="458" selection-end-column="30" />
           <folding>
             <element signature="e#1115#1215#0" expanded="false" />
             <element signature="n#!!block;n#formatTime#0;n#!!block;n#music#0;n#!!block;n#homeJob#0" expanded="false" />
@@ -929,7 +828,7 @@
     <entry file="file://$PROJECT_DIR$/source/icon_9izamr4z0jp/叉叉.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -954,8 +853,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="162" column="11" lean-forward="false" selection-start-line="162" selection-start-column="11" selection-end-line="162" selection-end-column="11" />
+        <state relative-caret-position="2355">
+          <caret line="157" column="28" lean-forward="false" selection-start-line="157" selection-start-column="28" selection-end-line="157" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/rebuild.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="126" column="85" lean-forward="true" selection-start-line="126" selection-start-column="85" selection-end-line="126" selection-end-column="85" />
           <folding />
         </state>
       </provider>

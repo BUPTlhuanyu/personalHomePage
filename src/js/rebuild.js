@@ -94,6 +94,8 @@
         },
         init: function () {
             window.addEventListener('load', function () {
+                //存储music数据到sessionStorage
+
                 this.updateView.bind(this)();
                 /*弹框*/
                 var navBarActive = document.getElementsByClassName('nav-bar-active')[0];
@@ -110,6 +112,21 @@
         //     window.addEventListener('hashchange', this.updateView.bind(this));
         // }
     };
+
+    $lhy.dataStore={
+        addData: function(dataName,dataValue){
+            sessionStorage.setItem(dataName, JSON.stringify(dataValue))
+        },
+        getJsonData: function(dataName){
+            return JSON.parse(sessionStorage.getItem(dataName))
+        },
+        removeData: function(dataName){
+            sessionStorage.removeItem(dataName);
+        },
+        assignData: function(dataName,dataValue){
+            return Object.assign({},JSON.parse(sessionStorage.getItem(dataName)),dataValue);
+        }
+    }
 
     $lhy.prototye = {
         // jsonp:function(src){
@@ -171,6 +188,9 @@ function homeJob() {
     var progressDot = document.getElementById('progressDot');
     var progressBar = document.getElementById('progressBar');
     var musicUrl = "../source/JSON/musicJSON.json";
+
+
+
     $lhy.getAjax(musicUrl, music);
 
     function music(musicData) {
@@ -180,11 +200,12 @@ function homeJob() {
 
         function init() {
             //getCurrentData
-            var currentData = data[parseInt(Math.random() * (len - 1))],
+            var currentData = $lhy.dataStore.getJsonData('music') || data[parseInt(Math.random() * (len - 1))],
                 currentSongId = currentData.id,
                 songName = currentData.name,
                 singerName = currentData.artists[0].name,
                 songPic = currentData.album.picUrl;
+            $lhy.dataStore.addData('music',currentData);
             //loadMusic
             audio.src = getSongUrl(originUrl, 'id', currentSongId);
             //loadPic
@@ -243,6 +264,8 @@ function homeJob() {
         }
 
         function nextSong() {
+            //下一首的时候清除之前sessionStorage中的记录
+            $lhy.dataStore.removeData('music');
             init();
             audio.play();
             playControl.className = "play-control";
@@ -269,7 +292,6 @@ function homeJob() {
             //offsetX得到的鼠标位置会出现为-1的情况
             eventPos = eventPos < 0 ? 0 : eventPos;
             audio.currentTime = audio.duration * eventPos / totalWidth;
-
         }
 
         init();
