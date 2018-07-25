@@ -113,18 +113,18 @@
         // }
     };
 
-    $lhy.dataStore={
-        addData: function(dataName,dataValue){
+    $lhy.dataStore = {
+        addData: function (dataName, dataValue) {
             sessionStorage.setItem(dataName, JSON.stringify(dataValue))
         },
-        getJsonData: function(dataName){
+        getJsonData: function (dataName) {
             return JSON.parse(sessionStorage.getItem(dataName))
         },
-        removeData: function(dataName){
+        removeData: function (dataName) {
             sessionStorage.removeItem(dataName);
         },
-        assignData: function(dataName,dataValue){
-            return Object.assign({},JSON.parse(sessionStorage.getItem(dataName)),dataValue);
+        assignData: function (dataName, dataValue) {
+            return Object.assign({}, JSON.parse(sessionStorage.getItem(dataName)), dataValue);
         }
     }
 
@@ -152,17 +152,74 @@ var Movie = {
             images = document.createElement('img');
             //一开始为了解决chrome和firefox浏览器加载http资源受限的情况，由于通过https获取的src自动变为https，所以这里不再需要手动添加s了
             // var imgSrc=addHttps(data.subjects[i].images.small,4,'s');
-            images.src = data.subjects[i].images.small;
+            images.dataset.src = data.subjects[i].images.small;
+            images.src = '';
             //虽然这里只修改一个样式，但是还是应该养成良好的习惯：利用DOM2级样式中style特性下的cssText属性，一次修改多个样式，只需一次回流和重绘
             // images.style.maxHeight="377px";
             images.style.cssText += ";max-height:377px";
-            images.onerror = function (event) {
-                //由于get不到图片，所以需要给用户提醒一下，哪些失败了
-                event.target.style.display = "none";
-            };
+            images.className = 'lazyLoad';
+            // images.onerror = function (event) {
+            //     //由于get不到图片，所以需要给用户提醒一下，哪些失败了
+            //     event.target.style.display = "none";
+            // };
             fragment.appendChild(images);
         }
         Movie.dom.appendChild(fragment);
+        Movie.checkImgs();
+        window.addEventListener('scroll', Movie.debounce(Movie.checkImgs, 200), false)
+        Movie.dom.addEventListener('scroll', Movie.debounce(Movie.checkImgs, 200), false)
+        // window.addEventListener('scroll', Movie.throttle(Movie.checkImgs, 200, 1000), false)
+        // Movie.dom.addEventListener('scroll', Movie.throttle(Movie.checkImgs, 200, 1000), false)
+
+    },
+    isInSight: function (container, el) {
+        var elTop = el.getBoundingClientRect().top - container.getBoundingClientRect().top;
+        var clientHeight = container.clientHeight;
+        //如果只考虑向下滚动加载
+        //const clientWidth = window.innerWeight;
+        return elTop <= clientHeight;
+    },
+    checkImgs: function () {
+        console.log(1)
+        var imgs = document.querySelectorAll('.lazyLoad');
+        imgs.forEach(function (item) {
+                if (Movie.isInSight(Movie.dom, item)) {
+                    item.src = item.dataset.src;
+                }
+            }
+        )
+    },
+    debounce: function (fn, wait) {
+        var timer = null;
+        return function () {
+            var context = this
+            var args = arguments
+            if (timer) {
+                clearTimeout(timer);
+                timer = null;
+            }
+            timer = setTimeout(function () {
+                fn.apply(context, args)
+            }, wait)
+        }
+    },
+    throttle: function (fun, delay, time) {
+        var timeout;
+        var previous = +new Date();
+        return function () {
+            var now = +new Date();
+            var context = this;
+            var args = arguments;
+            clearTimeout(timeout);
+            if (now - previous >= time) {
+                fun.apply(context, args);
+                previous = now;
+            } else {
+                timeout = setTimeout(function () {
+                    fun.apply(context, args);
+                }, delay);
+            }
+        }
     }
 };
 
@@ -188,8 +245,7 @@ function homeJob() {
     var progressDot = document.getElementById('progressDot');
     var progressBar = document.getElementById('progressBar');
     var musicUrl = "../source/JSON/musicJSON.json";
-
-
+    $lhy.dataStore.audioData = audio;
 
     $lhy.getAjax(musicUrl, music);
 
@@ -205,7 +261,7 @@ function homeJob() {
                 songName = currentData.name,
                 singerName = currentData.artists[0].name,
                 songPic = currentData.album.picUrl;
-            $lhy.dataStore.addData('music',currentData);
+            $lhy.dataStore.addData('music', currentData);
             //loadMusic
             audio.src = getSongUrl(originUrl, 'id', currentSongId);
             //loadPic
