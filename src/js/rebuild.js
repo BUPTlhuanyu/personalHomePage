@@ -166,8 +166,8 @@ var Movie = {
         }
         Movie.dom.appendChild(fragment);
         Movie.checkImgs();
-        window.addEventListener('scroll', Movie.debounce(Movie.checkImgs, 200), false)
-        Movie.dom.addEventListener('scroll', Movie.debounce(Movie.checkImgs, 200), false)
+        window.addEventListener('scroll', Movie.throttle(Movie.checkImgs, 200,500), false)
+        Movie.dom.addEventListener('scroll', Movie.throttle(Movie.checkImgs, 200,500), false)
         // window.addEventListener('scroll', Movie.throttle(Movie.checkImgs, 200, 1000), false)
         // Movie.dom.addEventListener('scroll', Movie.throttle(Movie.checkImgs, 200, 1000), false)
 
@@ -180,7 +180,6 @@ var Movie = {
         return elTop <= clientHeight;
     },
     checkImgs: function () {
-        console.log(1)
         var imgs = document.querySelectorAll('.lazyLoad');
         imgs.forEach(function (item) {
                 if (Movie.isInSight(Movie.dom, item)) {
@@ -196,7 +195,6 @@ var Movie = {
             var args = arguments
             if (timer) {
                 clearTimeout(timer);
-                timer = null;
             }
             timer = setTimeout(function () {
                 fn.apply(context, args)
