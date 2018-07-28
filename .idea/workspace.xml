@@ -1,77 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a47252b9-49d9-4c49-ac66-ad4dba6fc46c" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/else/1.html" afterPath="$PROJECT_DIR$/client/else/1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/else/2.html" afterPath="$PROJECT_DIR$/client/else/2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/else/3.html" afterPath="$PROJECT_DIR$/client/else/3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/else/BFC.html" afterPath="$PROJECT_DIR$/client/else/BFC.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/else/My project.zip" afterPath="$PROJECT_DIR$/client/else/My project.zip" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/else/StickyFooter.html" afterPath="$PROJECT_DIR$/client/else/StickyFooter.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/JSON/musicJSON.json" afterPath="$PROJECT_DIR$/client/source/JSON/musicJSON.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/JSON/myBooks.json" afterPath="$PROJECT_DIR$/client/source/JSON/myBooks.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/icon_9izamr4z0jp/下一首.svg" afterPath="$PROJECT_DIR$/client/source/icon_9izamr4z0jp/下一首.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/icon_9izamr4z0jp/关闭音量.svg" afterPath="$PROJECT_DIR$/client/source/icon_9izamr4z0jp/关闭音量.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/icon_9izamr4z0jp/叉叉.svg" afterPath="$PROJECT_DIR$/client/source/icon_9izamr4z0jp/叉叉.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/icon_9izamr4z0jp/播放.svg" afterPath="$PROJECT_DIR$/client/source/icon_9izamr4z0jp/播放.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/icon_9izamr4z0jp/播放_1.svg" afterPath="$PROJECT_DIR$/client/source/icon_9izamr4z0jp/播放_1.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/icon_xkza6kpweeo/下一首.png" afterPath="$PROJECT_DIR$/client/source/icon_xkza6kpweeo/下一首.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/icon_xkza6kpweeo/关闭音量.png" afterPath="$PROJECT_DIR$/client/source/icon_xkza6kpweeo/关闭音量.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/icon_xkza6kpweeo/叉叉.png" afterPath="$PROJECT_DIR$/client/source/icon_xkza6kpweeo/叉叉.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/icon_xkza6kpweeo/播放.png" afterPath="$PROJECT_DIR$/client/source/icon_xkza6kpweeo/播放.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/icon_xkza6kpweeo/播放_1.png" afterPath="$PROJECT_DIR$/client/source/icon_xkza6kpweeo/播放_1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/icon_xkza6kpweeo/音量大小.png" afterPath="$PROJECT_DIR$/client/source/icon_xkza6kpweeo/音量大小.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/1-Home.png" afterPath="$PROJECT_DIR$/client/source/images/1-Home.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/backgroundimage.jpg" afterPath="$PROJECT_DIR$/client/source/images/backgroundimage.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/backgroundimage1.jpg" afterPath="$PROJECT_DIR$/client/source/images/backgroundimage1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/backgroundimage2.jpg" afterPath="$PROJECT_DIR$/client/source/images/backgroundimage2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/download.png" afterPath="$PROJECT_DIR$/client/source/images/download.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/f97e77234ff936032539636a3aa993e6.png" afterPath="$PROJECT_DIR$/client/source/images/f97e77234ff936032539636a3aa993e6.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/fork.png" afterPath="$PROJECT_DIR$/client/source/images/fork.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/forks.png" afterPath="$PROJECT_DIR$/client/source/images/forks.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/get.png" afterPath="$PROJECT_DIR$/client/source/images/get.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/github.png" afterPath="$PROJECT_DIR$/client/source/images/github.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/life.png" afterPath="$PROJECT_DIR$/client/source/images/life.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/main.png" afterPath="$PROJECT_DIR$/client/source/images/main.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/next.png" afterPath="$PROJECT_DIR$/client/source/images/next.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/play.png" afterPath="$PROJECT_DIR$/client/source/images/play.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/prev.png" afterPath="$PROJECT_DIR$/client/source/images/prev.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/stop.png" afterPath="$PROJECT_DIR$/client/source/images/stop.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/voice.png" afterPath="$PROJECT_DIR$/client/source/images/voice.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/images/voiceless.png" afterPath="$PROJECT_DIR$/client/source/images/voiceless.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css/common.css" afterPath="$PROJECT_DIR$/client/src/css/common.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css/index.css" afterPath="$PROJECT_DIR$/client/src/css/index.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/backgroundimage1.jpg" afterPath="$PROJECT_DIR$/client/src/img/backgroundimage1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/backgroundimage2.jpg" afterPath="$PROJECT_DIR$/client/src/img/backgroundimage2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/fork.png" afterPath="$PROJECT_DIR$/client/src/img/fork.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/fork.svg" afterPath="$PROJECT_DIR$/client/src/img/fork.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/get.png" afterPath="$PROJECT_DIR$/client/src/img/get.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/github.png" afterPath="$PROJECT_DIR$/client/src/img/github.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/next.png" afterPath="$PROJECT_DIR$/client/src/img/next.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/next.svg" afterPath="$PROJECT_DIR$/client/src/img/next.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/play.png" afterPath="$PROJECT_DIR$/client/src/img/play.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/play.svg" afterPath="$PROJECT_DIR$/client/src/img/play.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/stop.png" afterPath="$PROJECT_DIR$/client/src/img/stop.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/stop.svg" afterPath="$PROJECT_DIR$/client/src/img/stop.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/voice.png" afterPath="$PROJECT_DIR$/client/src/img/voice.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/voice.svg" afterPath="$PROJECT_DIR$/client/src/img/voice.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/voiceless.png" afterPath="$PROJECT_DIR$/client/src/img/voiceless.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/voiceless.svg" afterPath="$PROJECT_DIR$/client/src/img/voiceless.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/client/src/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/databind.js" afterPath="$PROJECT_DIR$/client/src/js/databind.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/dbapi.js" afterPath="$PROJECT_DIR$/client/src/js/dbapi.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/index.js" afterPath="$PROJECT_DIR$/client/src/js/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/jquery-3.3.1.js" afterPath="$PROJECT_DIR$/client/src/js/jquery-3.3.1.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/rebuild.js" afterPath="$PROJECT_DIR$/client/src/js/rebuild.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/test.js" afterPath="$PROJECT_DIR$/client/src/js/test.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pages/home.html" afterPath="$PROJECT_DIR$/client/src/pages/home.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pages/life.css" afterPath="$PROJECT_DIR$/client/src/pages/life.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pages/life.html" afterPath="$PROJECT_DIR$/client/src/pages/life.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pages/lifeOld.html" afterPath="$PROJECT_DIR$/client/src/pages/lifeOld.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-    </list>
+    <list default="true" id="a47252b9-49d9-4c49-ac66-ad4dba6fc46c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -168,8 +98,8 @@
           <file leaf-file-name="rebuild.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/js/rebuild.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="383">
-                  <caret line="591" column="27" lean-forward="true" selection-start-line="591" selection-start-column="27" selection-end-line="591" selection-end-column="27" />
+                <state relative-caret-position="398">
+                  <caret line="592" column="31" lean-forward="true" selection-start-line="592" selection-start-column="31" selection-end-line="592" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -189,11 +119,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+          <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/readme.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="111" column="7" lean-forward="true" selection-start-line="111" selection-start-column="7" selection-end-line="111" selection-end-column="7" />
+                <state relative-caret-position="389">
+                  <caret line="112" column="18" lean-forward="true" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -256,7 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/js.js" />
         <option value="$PROJECT_DIR$/src/js/db.js" />
         <option value="$PROJECT_DIR$/src/js/dbapiWebSocket.js" />
         <option value="$PROJECT_DIR$/else/t.html" />
@@ -307,6 +246,7 @@
         <option value="$PROJECT_DIR$/client/src/index.html" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/client/src/js/rebuild.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -398,8 +338,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/src/js" />
       <recent name="$PROJECT_DIR$/src/img" />
       <recent name="$PROJECT_DIR$/source" />
@@ -587,12 +527,12 @@
       <workItem from="1532657603264" duration="16000" />
       <workItem from="1532702477633" duration="1280000" />
       <workItem from="1532704447757" duration="503000" />
-      <workItem from="1532784940669" duration="6458000" />
+      <workItem from="1532784940669" duration="6804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="378302000" />
+    <option name="totallyTimeSpent" value="378648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -646,7 +586,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dist/index.html" />
     <entry file="file://$PROJECT_DIR$/dist/source/JSON/myBooks.json" />
     <entry file="file://$PROJECT_DIR$/client/else/2.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -892,8 +831,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="65" lean-forward="false" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+        <state relative-caret-position="240">
+          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -916,18 +855,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/js/rebuild.js">
+    <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="591" column="27" lean-forward="true" selection-start-line="591" selection-start-column="27" selection-end-line="591" selection-end-column="27" />
+        <state relative-caret-position="389">
+          <caret line="112" column="18" lean-forward="true" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="111" column="7" lean-forward="true" selection-start-line="111" selection-start-column="7" selection-end-line="111" selection-end-column="7" />
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/js/rebuild.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="592" column="31" lean-forward="true" selection-start-line="592" selection-start-column="31" selection-end-line="592" selection-end-column="31" />
           <folding />
         </state>
       </provider>

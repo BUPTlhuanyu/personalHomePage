@@ -591,7 +591,7 @@ function goHome() {
                 resolve(data);
             });
         }).then(function(data){
-            alert(data)
+            console.log(data)
         });
     }catch {
 
