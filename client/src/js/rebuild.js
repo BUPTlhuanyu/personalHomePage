@@ -584,18 +584,18 @@ function goHome() {
         routerView.innerHTML = data;
         homeJob();
     });
-    try{
-        //后台接口测试
-        new Promise(function(resolve,reject){
-            $lhy.getAjax("http://localhost:8888/test/test_v1",function(data){
-                resolve(data);
-            });
-        }).then(function(data){
-            console.log(data)
-        });
-    }catch {
-
-    }
+    // try{
+    //     //后台接口测试
+    //     new Promise(function(resolve,reject){
+    //         $lhy.getAjax("http://localhost:8888/test/test_v1",function(data){
+    //             resolve(data);
+    //         });
+    //     }).then(function(data){
+    //         console.log(data)
+    //     });
+    // }catch {
+    //
+    // }
 }
 
 function goLive() {
