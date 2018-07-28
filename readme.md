@@ -1,10 +1,10 @@
 一个建设中的个人网站
 ====
 
-[主页](http://htmlpreview.github.io/?https://github.com/BUPTlhuanyu/personalHomePage/blob/master/src/index.html)
+[主页](http://htmlpreview.github.io/?https://github.com/BUPTlhuanyu/personalHomePage/blob/master/client/src/index.html)
 
 ####
-    打算写两个版本，原生js版本以及vue版本或者react版本
+    前端页面：打算写两个版本，原生js版本以及vue版本或者react版本
     原生js版本主要存在的问题有
 +   异步管理，将使用定时器，事件处理程序，以及es6的promise，generator，async管理异步流程
 +   数据的双向绑定
@@ -79,6 +79,39 @@
     的定时器，重新设定定时器，如果这里一直不停的滚动屏幕，那么定时器的函数永远不会执行，后面的图片一直都不会无法赋值真正的src，所有这里需要用到函数节流，函数节流相当于函数防抖
     的一种增强版，通过date对象，设定一个时间，对比事件触发的时候两次事件发生的时间间隔如果超过了设定的时间，那么图片加载函数一定执行一次，也就是函数节流一定会得到执行，但是
     要满足前面提到的两次事件触发的间隔满足条件。
+
+
+####
+    后端：nodejs + MongoDB/MySQL + express
++   创建后端目录结构，安装npm包
++   后台解决跨域问题：routes/index.js会将
+    ```
+        app => {
+            app.use('/test', test);
+        }
+    ```
+    export到app.js中作为app的中间件，其中test函数就是一个中间件函数，并且'/test'表示当请求的路径是/test的时候，就会加载中间件test。
+    test函数为：
+    ```
+        const router = express.Router()
+        router.get('test_v1', function (req, res) {
+            res.send('GET request to the homepage');
+        });
+    ```
+    如果请求的路径是/test/test_v1则执行后面对的函数返回GET...，如果代码非常简单，完全可以 app.get('/',....),如果路由比较复杂，使用 express.Router() 更合适。
+    跨域方法：后端写法
+    ```
+        app.all('*', (req, res, next) => {
+            res.header("Access-Control-Allow-Origin", req.headers.Origin || req.headers.origin || 'https://localhost');
+            if (req.method == 'OPTIONS') {
+                res.send(200);
+            } else {
+                next();
+            }
+        });
+    ```
+    所有路径都会匹配这个中间件。
+
 
 #####
      gitnub.io的在线预览的经验：github不是CDN静态资源缓存代理所以想要动态添加外部css文件或者js文件是行不通的，所以这里静态导入了所有需要的css
