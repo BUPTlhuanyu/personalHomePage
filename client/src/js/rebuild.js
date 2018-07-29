@@ -359,7 +359,10 @@ function homeJob() {
     }
 
     /*获取图书资源*/
-    var bookUrl = "../source/JSON/myBooks.json";
+    //静态JSON文件
+    // var bookUrl = "../source/JSON/myBooks.json";
+    //从后台接口获取JSON数据
+    var bookUrl = "http://localhost:8888/test/book";
     var asideBar = document.getElementsByClassName("aside-bar")[0];
     var bookKeys = document.getElementById('keys');
     var maskStated = false, getStated = false;
@@ -584,18 +587,18 @@ function goHome() {
         routerView.innerHTML = data;
         homeJob();
     });
-    try{
-        //后台接口测试
-        new Promise(function(resolve,reject){
-            $lhy.getAjax("http://localhost:8888/test/test_v1",function(data){
-                resolve(data);
-            });
-        }).then(function(data){
-            console.log(data)
-        });
-    }catch {
-
-    }
+    // try{
+    //     //后台接口测试
+    //     new Promise(function(resolve,reject){
+    //         $lhy.getAjax("http://localhost:8888/test/book",function(data){
+    //             resolve(data);
+    //         });
+    //     }).then(function(data){
+    //         console.log(data)
+    //     });
+    // }catch {
+    //
+    // }
 }
 
 function goLive() {

@@ -2,6 +2,7 @@ import express from 'express';
 import config from 'config-lite';
 import chalk from 'chalk';
 import router from './routes/index.js';
+import db from './mongodb/db.js'
 
 
 const app = express();

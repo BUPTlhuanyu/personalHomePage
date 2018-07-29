@@ -1,10 +1,9 @@
 'use strict';
 
 import express from 'express'
+import BookHandle from '../controller/book'
 const router = express.Router()
 
-router.get('/test_v1', function (req, res) {
-    res.send('GET request to the homepage');
-});
+router.get('/book', BookHandle.getBooks);
 
 export default router

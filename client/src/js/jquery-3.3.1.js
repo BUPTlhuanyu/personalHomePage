@@ -22,17 +22,17 @@
 	//1：	AMD 定义了 define 函数，我们可以使用 typeof 探测该函数是否已定义。
 	//		若要更严格一点，可以继续判断 define.amd 是否有定义。
 	// 		另外，SeaJS 也使用了 define 函数，但和 AMD 的 define 又不太一样。
-	//2：	对于 CommonJS，可以检查 exports 或是 module.exports 是否有定义。
+	//2：	对于 CommonJS，可以检查 exports 或是 models.exports 是否有定义。
 	// 	编写模块化的jQuery代码之前，先探测模块环境以便是遵循commonjs modules还是AMD规范
 	//用于探测是否具有commonjs modules的模块环境，如果有module与module.exports就是一个对象
-	//typeof module === "object" && typeof module.exports === "object"
+	//typeof models === "object" && typeof models.exports === "object"
 	//注意：AMD的探测见代码-> 搜索：typeof define === "function" && define.amd
 	if ( typeof module === "object" && typeof module.exports === "object" ) {
 
 		// For CommonJS and CommonJS-like environments where a proper `window`
 		// is present, execute the factory and get jQuery.
 		// For environments that do not have a `window` with a `document`
-		// (such as Node.js), expose a factory as module.exports.
+		// (such as Node.js), expose a factory as models.exports.
 		// This accentuates the need for the creation of a real `window`.
 		// e.g. var jQuery = require("jquery")(window);
 		// See ticket #14549 for more info.
@@ -144,7 +144,7 @@ function toType( obj ) {
 }
 /* global Symbol */
 // Defining this global in .eslintrc.json would create a danger of using the global
-// unguarded in another place, it seems safer to define global only for this module
+// unguarded in another place, it seems safer to define global only for this models
 
 
 
@@ -373,7 +373,7 @@ jQuery.extend( {
 	// Unique for each copy of jQuery on the page
 	expando: "jQuery" + ( version + Math.random() ).replace( /\D/g, "" ),
 
-	// Assume jQuery is ready without the ready module
+	// Assume jQuery is ready without the ready models
 	isReady: true,
 
 	error: function( msg ) {
@@ -4282,7 +4282,7 @@ var dataUser = new Data();
 //	Implementation Summary
 //
 //	1. Enforce API surface and semantic compatibility with 1.9.x branch
-//	2. Improve the module's maintainability by reducing the storage
+//	2. Improve the models's maintainability by reducing the storage
 //		paths to a single mechanism.
 //	3. Use the same single mechanism to support "private" and "user" data.
 //	4. _Never_ expose "private" data to user code (TODO: Drop _data, _removeData)
@@ -10258,7 +10258,7 @@ jQuery.each( { scrollLeft: "pageXOffset", scrollTop: "pageYOffset" }, function( 
 // Webkit bug: https://bugs.webkit.org/show_bug.cgi?id=29084
 // Blink bug: https://bugs.chromium.org/p/chromium/issues/detail?id=589347
 // getComputedStyle returns percent when specified for top/left/bottom/right;
-// rather than make the css module depend on the offset module, just check for it here
+// rather than make the css models depend on the offset models, just check for it here
 jQuery.each( [ "top", "left" ], function( i, prop ) {
 	jQuery.cssHooks[ prop ] = addGetHookIf( support.pixelPosition,
 		function( elem, computed ) {
@@ -10432,12 +10432,12 @@ jQuery.isNumeric = function( obj ) {
 
 
 
-// Register as a named AMD module, since jQuery can be concatenated with other
+// Register as a named AMD models, since jQuery can be concatenated with other
 // files that may use define, but not via a proper concatenation script that
 // understands anonymous AMD modules. A named AMD is safest and most robust
-// way to register. Lowercase jquery is used because AMD module names are
+// way to register. Lowercase jquery is used because AMD models names are
 // derived from file names, and jQuery is normally delivered in a lowercase
-// file name. Do this after creating the global so that if an AMD module wants
+// file name. Do this after creating the global so that if an AMD models wants
 // to call noConflict to hide this version of jQuery, it will work.
 
 // Note that for maximum portability, libraries that are not jQuery should

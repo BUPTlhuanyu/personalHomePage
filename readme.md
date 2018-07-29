@@ -3,6 +3,16 @@
 
 [主页](http://htmlpreview.github.io/?https://github.com/BUPTlhuanyu/personalHomePage/blob/master/client/src/index.html)
 
+#####
+    操作步骤：
+        第一步：OS系统下：
+                cd Applications/mongodb/bin
+                ./mongod
+                开启Mongodb。
+        第二步：npm run dev
+               后台服务开启,数据库连接
+        第三步：浏览器打开client/src/index.html
+
 ####
     前端页面：打算写两个版本，原生js版本以及vue版本或者react版本
     原生js版本主要存在的问题有
@@ -83,6 +93,11 @@
 
 ####
     后端：nodejs + MongoDB/MySQL + express
+    开启数据库连接操作：
+    OS系统下：
+    cd Applications/mongodb/bin
+    ./mongod
+
 +   创建后端目录结构，安装npm包
 +   后台解决跨域问题：routes/index.js会将
     ```
@@ -111,6 +126,15 @@
         });
     ```
     所有路径都会匹配这个中间件。
++   完成book接口：只支持get请求
+    第一步：创建mongodb文件夹，并且创建db.js文件，利用mongoose连接数据库。
+    第二步：在后台入口文件app.js文件中引入db.js文件中的db，此时开始连接数据库，并监听一系列的连接事件
+    第三步：接口编写，数据录入数据库
+           文件夹介绍: InitData文件夹存放初始数据，
+                      models用于存放数据库相关操作方法的脚本文件，
+                      controller文件夹用于调用models中的方法获取数据，并对数据进行一些筛选或者其他操作，并将数据返回给响应res
+                      具体思路参考MVC
+
 
 
 #####
