@@ -46,6 +46,10 @@
 +   水平垂直居中
 +   媒体查询加流式布局实现移动端与PC端的响应式布局
 +   css3的过渡效果transition
++   可以将图片作为背景图片并且设置：background-size:cover;background-position:center center;图片不发生拉伸长宽比不变但是图片超出的部分被隐藏
+    background-size:contain图片长宽比不变并且会完全显示出来但是不一定会铺满容器
++   雪碧图：通过background-position的位置来动态显示雪碧图不同的部分
++   clip-path:不改变容器的站位，对其裁剪。
 
 #####   js
 +   利用豆瓣API，生成电影榜单:利用jsonp跨域，解决chrome等浏览器的阻止混合内容，取消逐个添加DOM，解决响应完成的一些异步问题。
