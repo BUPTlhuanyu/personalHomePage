@@ -216,7 +216,7 @@ audio{
     font-size: 0.75rem;
 }
 .aside-bar{
-    overflow-y: auto;
+    /*overflow-y: auto;*/
     text-align:center;
 }
 .aside-bar a{
@@ -253,8 +253,8 @@ audio{
 #mask
 {
     display: none;
-    width:65vmin;
-    height:40vmin;
+    width:85vmin;
+    height:45vmin;
     background-color: #fff;
     position: fixed;
     top: 50%;
@@ -264,11 +264,28 @@ audio{
     z-index:99;
     overflow: hidden;
     box-shadow:0.2rem 0.2rem 0.5rem #888888;
+    min-width:305px;
+    animation: run .1s;
+    /*定义最终动画停留在初始状态也就是50%，不是0%的状态*/
+    animation-fill-mode:forwards;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes run{
+    0%{
+        left:50%;
+    }
+    50%{
+        left:49%;
+    }
+    100%{
+        left:51%;
+    }
 }
 
 #mask .quit span{
-    background:url("../img/fork.png") no-repeat right center;
-    background-size: cover;
+    background:url("../img/fork.png") no-repeat;
+    background-size: contain;
     cursor: pointer;
     border:0;
     position:absolute;
