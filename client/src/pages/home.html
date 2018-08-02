@@ -1,0 +1,62 @@
+<section class="content clearfix col-same">
+    <aside class="primary">
+        <p class="content-title">Welcome ! my friends!</p>
+        <div class="content-skill">
+            <ul class="skill-one clearfix">
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>HTTP</li>
+            </ul>
+            <ul class="skill-two clearfix">
+                <li>Vue</li>
+                <li>NodeJs</li>
+                <li>React</li>
+            </ul>
+        </div>
+        <p class="content-icon">
+            <a href="https://github.com/BUPTlhuanyu"><img src="img/github.png" /></a>
+        </p>
+    </aside>
+    <article class="secondary">
+        <div class="top-box">
+            <div class="music">
+                <audio>
+                    <source src="" >
+                </audio>
+                <div id="music-img">
+                    <a href="javascript:" class="stop-control"></a>
+                </div>
+                <div id="music-control">
+                    <div class="audio-left">
+                    </div>
+                    <div class="audio-right">
+                        <div class="audio-title">
+                            <p id="songName"></p>
+                            <a id="volume" class="volumeMore"></a>
+                        </div>
+                        <div class="progress-bar-bg" id="progressBarBg">
+                            <span id="progressDot"></span>
+                            <div class="progress-bar" id="progressBar"></div>
+                        </div>
+                        <div class="audio-time">
+                            <span class="audio-length-current" id="audioCurTime">00:00</span>
+                            <span class="audio-length-total" id="audioTotalTime">01:06</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-box clearfix">
+            <div class="primary">
+                <div class="cont">
+                    <!--利用canvas实现跟随音乐律动的粒子效果-->
+                    <canvas id="myCanvas" width="350px" height="175px"></canvas>
+                </div>
+            </div>
+            <div class="secondary">
+                <div class="aside-bar"></div>
+            </div>
+        </div>
+    </article>
+</section>
