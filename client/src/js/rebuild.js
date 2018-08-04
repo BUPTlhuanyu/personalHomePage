@@ -264,6 +264,7 @@ function homeJob() {
             $lhy.dataStore.addData('music', currentData);
             //loadMusic
             audio.src = getSongUrl(originUrl, 'id', currentSongId);
+            console.log(audio.src)
             //loadPic
             musicImg.style.cssText = ";background:url(" + songPic + ")no-repeat center;background-size:cover;";
             //showDetail
@@ -572,6 +573,20 @@ function homeJob() {
     //获取文字内容的坐标
     var dots = ShapeBuilder.getPositions();
     canvas.init();
+
+    /*readme*/
+    // function showReadMe(data){
+    // //    将获取到的数据
+    // //    删除canvas节点
+    //     var canvas=document.getElementsByTagName('canvas')[0];
+    //     var parent=canvas.parentElement;
+    //     parent.removeChild(canvas);
+    //
+    // }
+    // async function getReadMe(){
+    //     let readMeUrl='http://localhost:8888/test/readme';
+    //     await $lhy.getAjax(readMeUrl,showReadMe)
+    // }
 }
 
 function goHome() {
