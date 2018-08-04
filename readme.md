@@ -141,6 +141,8 @@
                       models用于存放数据库相关操作方法的脚本文件，
                       controller文件夹用于调用models中的方法获取数据，并对数据进行一些筛选或者其他操作，并将数据返回给响应res
                       具体思路参考MVC
++   完成网易云音乐接口：后代服务器获取网易云音乐资源，与book相似，app.js入口，匹配test执行test中间件，url匹配/music/api/playlist/detail执行music中间件执行获取网易音乐
+    网易云音乐资源需要带token，这里从github上找到解决方案，见middllewares中的crypto，利用md5加密，这里不深究，一个bug：歌曲资源获取不到的时候需要错误处理并执行下一首。
 
 
 
