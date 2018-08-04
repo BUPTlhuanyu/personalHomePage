@@ -49,7 +49,7 @@
 #####   js
 +   利用豆瓣API，生成电影榜单:利用jsonp跨域，解决chrome等浏览器的阻止混合内容，取消逐个添加DOM，解决响应完成的一些异步问题。
 +   网易云音乐歌曲获取，还没有实现跨站请求伪造(CSRF),伪造请求头,调用官方API，这里只是简单的获取歌单的API，然后获取页面的JSON数据存为
-    本地的JSON数据，跳过了跨域这样的一个问题。
+    本地的JSON数据，跳过了跨域这样的一个问题。歌单api：http://music.163.com/api/playlist/detail?id=   id为对应的歌单id
 +   audio音频对象的使用
 +   通过js改变伪类hover的样式:通过在css中写两个class然后，通过DOM的className或者classList选用class
 +   利用canvas文字粒子效果：imageData对象，文字微粒化，随机粒子运动
@@ -134,7 +134,8 @@
                       models用于存放数据库相关操作方法的脚本文件，
                       controller文件夹用于调用models中的方法获取数据，并对数据进行一些筛选或者其他操作，并将数据返回给响应res
                       具体思路参考MVC
-
++   完成网易云音乐接口：后代服务器获取网易云音乐资源，与book相似，app.js入口，匹配test执行test中间件，url匹配/music/api/playlist/detail执行music中间件执行获取网易音乐
+    网易云音乐资源需要带token，这里从github上找到解决方案，见middllewares中的crypto，利用md5加密，这里不深究，一个bug：歌曲资源获取不到的时候需要错误处理并执行下一首。
 
 
 #####

@@ -242,23 +242,25 @@ function homeJob() {
     var progressBarBg = document.getElementById('progressBarBg');
     var progressDot = document.getElementById('progressDot');
     var progressBar = document.getElementById('progressBar');
-    var musicUrl = "../source/JSON/musicJSON.json";
+    // var musicUrl = "../source/JSON/musicJSON.json";
+    var musicUrl = "http://localhost:8888/test/music/api/playlist/detail?id=2335662972";
     $lhy.dataStore.audioData = audio;
 
     $lhy.getAjax(musicUrl, music);
 
     function music(musicData) {
-        var data = JSON.parse(musicData).result.tracks, len = data.length, stopState = 1,
+        console.log(musicData)
+        var data = JSON.parse(musicData).playlist.tracks, len = data.length, stopState = 1,
             originUrl = "http://music.163.com/song/media/outer/url",
             volumeValue = 1;
-
+        console.log(data)
         function init() {
             //getCurrentData
             var currentData = $lhy.dataStore.getJsonData('music') || data[parseInt(Math.random() * (len - 1))],
                 currentSongId = currentData.id,
                 songName = currentData.name,
-                singerName = currentData.artists[0].name,
-                songPic = currentData.album.picUrl;
+                singerName = currentData.ar[0].name,
+                songPic = currentData.al.picUrl;
             $lhy.dataStore.addData('music', currentData);
             //loadMusic
             audio.src = getSongUrl(originUrl, 'id', currentSongId);
