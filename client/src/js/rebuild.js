@@ -604,18 +604,14 @@ function goHome() {
         routerView.innerHTML = data;
         homeJob();
     });
-    // try{
-    //     //后台接口测试
-    //     new Promise(function(resolve,reject){
-    //         $lhy.getAjax("http://localhost:8888/test/book",function(data){
-    //             resolve(data);
-    //         });
-    //     }).then(function(data){
-    //         console.log(data)
-    //     });
-    // }catch {
-    //
-    // }
+        //后台接口测试
+        new Promise(function(resolve,reject){
+            $lhy.getAjax("http://localhost:8888/test/readme",function(data){
+                resolve(data);
+            });
+        }).then(function(data){
+            console.log(data)
+        }).catch((err)=>{console.log(err)});
 }
 
 function goLive() {

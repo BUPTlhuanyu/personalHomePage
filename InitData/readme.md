@@ -136,8 +136,7 @@
                       具体思路参考MVC
 +   完成网易云音乐接口：后代服务器获取网易云音乐资源，与book相似，app.js入口，匹配test执行test中间件，url匹配/music/api/playlist/detail执行music中间件执行获取网易音乐
     网易云音乐资源需要带token，这里从github上找到解决方案，见middllewares中的crypto，利用md5加密，这里不深究，一个bug：歌曲资源获取不到的时候需要错误处理并执行下一首。
-+   mongodb数据库存储.md文件：开启数据库，运行mongo，在mongodb安装目录下运行./mongofiles --local ~/pj/personalHomePage/readme.md --db personalHP put readme.md
-    此时.md文件信息已经加入到了fs.files集合下与数据存储在fs.chunks集合中。
+
 
 #####
      gitnub.io的在线预览的经验：github不是CDN静态资源缓存代理所以想要动态添加外部css文件或者js文件是行不通的，所以这里静态导入了所有需要的css

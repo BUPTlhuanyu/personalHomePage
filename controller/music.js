@@ -36,7 +36,7 @@ function arr2Str(bytes) {
     }
     return str
 }
-function createWebAPIRequest(path, data, cookie, response, method) {
+function createWebAPIRequest(path, data, c, response, method) {
     method = method ? method : "POST"
     var music_req = '';
     var cryptoreq = Encrypt(data);
