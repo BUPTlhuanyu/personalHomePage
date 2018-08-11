@@ -144,7 +144,17 @@
                       具体思路参考MVC
 +   完成网易云音乐接口：后代服务器获取网易云音乐资源，与book相似，app.js入口，匹配test执行test中间件，url匹配/music/api/playlist/detail执行music中间件执行获取网易音乐
     网易云音乐资源需要带token，这里从github上找到解决方案，见middllewares中的crypto，利用md5加密，这里不深究，一个bug：歌曲资源获取不到的时候需要错误处理并执行下一首。
-
++   mongodb数据库存储.md文件：开启数据库，运行mongo，在mongodb安装目录下运行./mongofiles --local ~/pj/personalHomePage/readme.md --db personalHP put readme.md
+    此时.md文件信息已经加入到了fs.files集合下与数据存储在fs.chunks集合中。
++   上传文件到mongodb然后通过mongoose获取文件内容:
+    mongoose利用find以及findeOne的区别是返回的是数组和对象，并且mongoose获取到的ObjectId类型的数据可以通过String()来转成字符串，并且通过ObjectId类型的数据来获取数据库中
+    文件时，直接将string类型的值给这个属性即可，不要转成ObjectId了，比如findOne({files_id:String(filesId._id)});filesId._id在定义Schema的时候是定义为ObjectId的：
+    ```
+        const chunksSchema = new mongoose.Schema({
+            files_id: ObjectId,
+            n: Number,
+            data:String,
+        },{collection:'fs.chunks'});
 
 
 #####
