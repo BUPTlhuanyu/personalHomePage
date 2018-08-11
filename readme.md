@@ -52,6 +52,7 @@
 +   clip-path:不改变容器的站位，对其裁剪。
 +   css动画：transition的补间动画，animation的关键帧动画以及animation加animation-timing-function：steps(1)实现的去补间动画即逐帧动画
     利用animation的关键帧动画以及遮罩元素fixed定位的left实现了遮罩元素的左右晃动效果。
++   利用transform与animation实现悬浮动画
 
 #####   js
 +   利用豆瓣API，生成电影榜单:利用jsonp跨域，解决chrome等浏览器的阻止混合内容，取消逐个添加DOM，解决响应完成的一些异步问题。
