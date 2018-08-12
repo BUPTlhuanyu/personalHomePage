@@ -155,6 +155,7 @@
             n: Number,
             data:String,
         },{collection:'fs.chunks'});
++   利用hyperdown将字符串转成md格式的html元素并显示。
 
 
 #####
