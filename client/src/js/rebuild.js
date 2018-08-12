@@ -573,7 +573,6 @@ function homeJob() {
     //获取文字内容的坐标
     var dots = ShapeBuilder.getPositions();
     canvas.init();
-
     /*readme*/
     // function showReadMe(data){
     // //    将获取到的数据
@@ -603,15 +602,22 @@ function goHome() {
         var routerView = document.getElementById('router-view');
         routerView.innerHTML = data;
         homeJob();
-    });
         //后台接口测试
-        new Promise(function(resolve,reject){
-            $lhy.getAjax("http://localhost:8888/test/readme",function(data){
-                resolve(data);
-            });
-        }).then(function(data){
-            console.log(data)
-        }).catch((err)=>{console.log(err)});
+        setTimeout(()=>{
+            new Promise(function(resolve,reject){
+                $lhy.getAjax("http://localhost:8888/test/readme",function(data){
+                    resolve(data);
+                });
+            }).then(function(data){
+                // console.log(data);
+                var parser = new HyperDown,
+                    html = parser.makeHtml(data);
+                var cont=document.getElementsByClassName('cont')[0];
+                cont.style.cssText="background-color:#dddebe";
+                cont.innerHTML=html;
+            }).catch((err)=>{console.log(err)});
+        },5000);
+    });
 }
 
 function goLive() {

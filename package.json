@@ -40,6 +40,7 @@
     "formidable": "^1.1.1",
     "gm": "^1.23.0",
     "http-proxy-middleware": "^0.18.0",
+    "hyperdown": "^2.3.1",
     "marked": "^0.3.6",
     "moment": "^2.18.1",
     "mongodb": "^2.2.25",

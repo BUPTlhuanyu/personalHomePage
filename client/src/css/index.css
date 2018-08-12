@@ -75,9 +75,20 @@
     margin-right:4rem;
 }
 .cont{
-    position: relative;
-    height: 26rem;
-    margin-right:0.5rem;
+      overflow: auto;
+      padding-left:1.5rem;
+      padding-right:1.5rem;
+      font-size: x-small;
+      word-wrap:break-word;
+      position: relative;
+      height: 26rem;
+      margin-right:0.5rem;
+  }
+
+.cont pre{
+    width:100%;
+    /*word-break: break-all;*/
+    white-space: pre-wrap;
 }
 .aside-bar{
     height: 26rem;
